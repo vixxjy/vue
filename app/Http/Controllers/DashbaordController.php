@@ -19,11 +19,6 @@ class DashbaordController extends Controller
         $this->middleware('auth');
     }
     public function index(){
-        $news = $this->repo->findAll();
-        $posts = $this->repos->findAll();
-        $sliders = $this->reposi->getAll();
-        $users = User::all();
-        return view('admin.dashboard')->with('news', $news)->with(compact('posts'))
-        ->with(compact('sliders'))->with(compact('users'));
+        return view('admin.dashboard');
     }
 }

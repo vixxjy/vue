@@ -23,7 +23,7 @@
                                         <i class="feather icon-home bg-c-blue"></i>
                                         <div class="d-inline">
                                             <h5>Dashboard</h5>
-                                            <span>Plateau State Government House</span>
+                                            <span>Finance Debt Management Department</span>
                                         </div>
                                     </div>
                                 </div>
@@ -47,25 +47,46 @@
 
                                         <div class="row">
 
-                                            <div class="col-md-12 col-xl-8">
+                                            <div class="col-md-12 col-xl-9">
                                                 <div class="card sale-card">
                                                     <div class="card-header">
-                                                        <h5>Analytics</h5>
+                                                        <h5>Supports Messages</h5>
                                                     </div>
                                                     <div class="card-block">
-                                                        <div id="sales-analyticss" class="chart-shadow"
-                                                            style="height:380px"></div>
+                                                    <div class="dt-responsive table-responsive">
+                                                        <table id="order-table" class="table table-striped table-bordered nowrap">
+                                                            <thead>
+                                                            <tr>
+                                                            <th>No</th>
+                                                            <th>Message</th>
+                                                            <th>Date</th>
+                                                            <th>Action</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                            
+                                                        </tbody>
+                                                        <tfoot>
+                                                            <tr>
+                                                            <th>No</th>
+                                                            <th>Message</th>
+                                                            <th>Date</th>
+                                                            <th>Action</th>
+                                                            </tr>
+                                                        </tfoot>
+                                                        </table>
+                                                    </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-12 col-xl-4">
+                                            <div class="col-md-12 col-xl-3">
                                                 <div class="card comp-card">
                                                     <div class="card-body">
                                                         <div class="row align-items-center">
                                                             <div class="col">
-                                                                <h6 class="m-b-25">Posts</h6>
-                                                                <h3 class="f-w-700 text-c-blue">{{ $posts->count() }}</h3>
-                                                                <p class="m-b-0">{{ isset($posts[0]) ? $posts[0]->created_at->format('F d, Y h:ia') : "no time yet" }}</p>
+                                                                <h6 class="m-b-25">MDAs</h6>
+                                                                <h3 class="f-w-700 text-c-blue"></h3>
+                                                                <p class="m-b-0"></p>
                                                             </div>
                                                             <!-- <div class="col-auto">
                                                                 <i class="fas fa-eye bg-c-blue"></i>
@@ -77,9 +98,9 @@
                                                     <div class="card-body">
                                                         <div class="row align-items-center">
                                                             <div class="col">
-                                                                <h6 class="m-b-25">News/Events</h6>
-                                                                <h3 class="f-w-700 text-c-green">{{ $news->count() }}</h3>
-                                                                <p class="m-b-0">{{ isset($news[0]) ? $news[0]->created_at->format('F d, Y h:ia') : "no time yet" }}</p>
+                                                                <h6 class="m-b-25">Economic Categories</h6>
+                                                                <h3 class="f-w-700 text-c-green"></h3>
+                                                                <p class="m-b-0"></p>
                                                             </div>
                                                             <!-- <div class="col-auto">
                                                                 <i class="fas fa-bullseye bg-c-green"></i>
@@ -91,9 +112,9 @@
                                                     <div class="card-body">
                                                         <div class="row align-items-center">
                                                             <div class="col">
-                                                                <h6 class="m-b-25">Users</h6>
-                                                                <h3 class="f-w-700 text-c-yellow">{{ $users->count() }}</h3>
-                                                                <p class="m-b-0">{{ isset($users[0]) ? $users[0]->created_at->format('F d, Y h:ia') : "no time yet" }}</p>
+                                                                <h6 class="m-b-25">Arrears Recorded</h6>
+                                                                <h3 class="f-w-700 text-c-yellow"></h3>
+                                                                <p class="m-b-0"></p>
                                                             </div>
                                                             <!-- <div class="col-auto">
                                                                 <i class="fas fa-hand-paper bg-c-yellow"></i>

@@ -3,7 +3,7 @@
         <div class="navbar-wrapper">
             <div class="navbar-logo">
                 <a href="index.html">
-                    <img class="img-fluid" src="{{ URL::asset('./assets/img/platStet.png') }}" style="width: 70px; height: 60px;" alt="Sprout" />
+                    <img class="img-fluid" src="https://finance.plateaustate.gov.ng/wp-content/uploads/2019/09/mof-e1569926458948.png" style="width: 70px; height: 60px;" alt="Sprout" />
                     <!-- <p>Sprout</p> -->
                 </a>
                 <a class="mobile-menu" id="mobile-collapse" href="#!">

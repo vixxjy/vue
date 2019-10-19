@@ -18,11 +18,8 @@ class HomeController extends Controller
         // $this->middleware('auth');
     }
     public function index(){
-        $news = $this->repo->getAll();
-        $posts = $this->repos->getAll();
-        $sliders = $this->reposi->getAll();
+       
         $users = User::all();
-        return view('welcome')->with('news', $news)->with(compact('posts'))
-        ->with(compact('sliders'))->with(compact('users'));
+        return view('welcome');
     }
 }

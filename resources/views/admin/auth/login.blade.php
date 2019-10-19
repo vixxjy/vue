@@ -37,6 +37,11 @@
 
     <link rel="stylesheet" type="text/css" href="../files/assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="../files/assets/css/pages.css">
+    <style>
+        body[themebg-pattern=theme1] {
+            background-color: #2ed8b6;
+        }
+    </style>
 </head>
 
 <body themebg-pattern="theme1">
@@ -114,7 +119,7 @@
                     <form class="md-float-material form-material" action="{{ route('login.post') }}" method="post">
                     {{ csrf_field() }}
                         <div class="text-center">
-                            <img src="{{ URL::asset('./assets/img/platStet.png') }}" style="width: 150px; height: 150px;" alt="logo.png">
+                            <img src="https://finance.plateaustate.gov.ng/wp-content/uploads/2019/09/mof-e1569926458948.png" style="width: 150px; height: 150px;" alt="logo.png">
                         </div>
                         <div class="auth-box card">
                             <div class="card-block">
@@ -154,7 +159,7 @@
                                 <div class="row m-t-30">
                                     <div class="col-md-12">
                                         <button type="submit"
-                                            class="btn btn-primary btn-md btn-block waves-effect text-center m-b-20">LOGIN</button>
+                                            class="btn btn-success btn-md btn-block waves-effect text-center m-b-20">LOGIN</button>
                                     </div>
                                 </div>
                                 <!-- <p class="text-inverse text-left">Don't have an account?<a

@@ -14,20 +14,20 @@ class UsersTableSeeder extends Seeder
     {
         $user = new \App\User([
             'name' => 'Super Admin',
-        	'email' => 'superadmin@pictda.com',
+        	'email' => 'superadmin@finance.com',
         	'password' => bcrypt('secret')
         ]);
         $user->save();
-        $user->assignRole("SuperAdmin");
+        // $user->assignRole("SuperAdmin");
         
 
         $user = new \App\User([
             'name' => 'Admin',
-        	'email' => 'admin@pictda.com',
+        	'email' => 'admin@finance.com',
         	'password' => bcrypt('secret')
         ]);
         $user->save();
-        $user->assignRole("Admin");
+        // $user->assignRole("Admin");
         
     }
 }
