@@ -17,8 +17,8 @@ class PagesController extends Controller
     }
 
     public function show($slug) {
-        $new = $this->repo->findBySlug($slug);
-        return view('news.news1')->with('new', $new);
+        $arrear = Arrear::where('slug', $slug)->get();
+        return view('arrears')->with(compact('arrear'));
     }
 
     public function showPosts($slug) {

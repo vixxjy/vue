@@ -79,122 +79,11 @@
     </div>
   </header><!-- #header -->
 
-  <!--==========================
-    Intro Section
-  ============================-->
-  <section id="intro">
-
-    <div class="intro-content">
-      <h2>Know <span>your Arrears</span><br>Today!</h2>
-      <div>
-        <a href="#about" class="btn-get-started scrollto">Get Started</a>
-        <a href="#contact" class="btn-projects scrollto">Contact Us</a>
-      </div>
-    </div>
-
-    <div id="intro-carousel" class="owl-carousel" >
-      <div class="item" style="background-image: url('https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.nasco.net%2Fmedia%2Fpage%2Fjos-1920x600.jpg&imgrefurl=https%3A%2F%2Fwww.nasco.net%2Fnews%2Fcity-state%2F&docid=60bpD2T8sWnW3M&tbnid=O9q3ZexqzR-syM%3A&vet=10ahUKEwjO9Mu_mLDlAhWktlkKHWzlBa4QMwheKBIwEg..i&w=1920&h=600&bih=678&biw=1301&q=images%20of%20jos&ved=0ahUKEwjO9Mu_mLDlAhWktlkKHWzlBa4QMwheKBIwEg&iact=mrc&uact=8');"></div>
-      <div class="item" style="background-image: url('frontend/img/intro-carousel/2.jpg');"></div>
-      <div class="item" style="background-image: url('frontend/img/intro-carousel/3.jpg');"></div>
-      <div class="item" style="background-image: url('frontend/img/intro-carousel/4.jpg');"></div>
-      <div class="item" style="background-image: url('frontend/img/intro-carousel/5.jpg');"></div>
-    </div>
-
-  </section><!-- #intro -->
-
   <main id="main">
 
 
-    <!--==========================
-      Services Section
-    ============================-->
-    <section id="services">
-      <div class="container-fluid">
-        <div class="section-header">
-          <h2>Review Arrears </h2>
-          <p>Know and review all arrears for all MDA(s), Contractors and Clients</p>
-            <hr>
-          <div class="card-block">
-                <div class="dt-responsive table-responsive">
-                <table id="example" class="table table-striped table-bordered table-sm nowrap">
-                    <thead>
-                    <tr>
-                    <th>S/N</th>
-                    <th>Debtor</th>
-                    <th>Creditor</th>
-                    <th>Arrears Owed</th>
-                    <th>Billing Date</th>
-                    <th>File Reference</th>
-                    <th>Arrears State</th>
-                    <th>Actions</th>
-                    </tr>
-                </thead>
-                <tbody>
-                @if(count($datas) > 0)
-                    @foreach($datas as $data)
-                    <tr>
-                        <td>{{ ++$i }}</td>
-                        <td>{{ $data->debtor }}</td>
-                        <td>{{ $data->creditor }}</td>
-                        <td>{{ $data->arrears_owed }}</td>
-                        <td>{{ $data->billing_date }}</td>
-                        <td>{{ $data->file_reference }}</td>
-                        <td>{{ $data->arrears_state }}</td>
-                        <!-- <td>{{ $data->created_at->format('F d, Y h:ia') }}</td> -->
 
-                        <td className="text-right">
-                            <a href="{{route('show.arrears', $data->slug)}}">
-                            <button class="btn btn-info btn-sm">
-                                <span class="fa fa-eye-open">View more</span>
-                            </button>
-                            </a>
-                        </td>
-                    </tr>
-                    @endforeach
-                @else
-                    <tr>
-                    <td colspan="8" class="text-center">
-                        <h4 class="card-title">No Arrears Recorded.</h4>
-                    </td>
-                    </tr>
-                @endif
-                </tbody>
-                <tfoot>
-                    <tr>
-                    <th>S/N</th>
-                    <th>Debtor</th>
-                    <th>Creditor</th>
-                    <th>Arrears Owed</th>
-                    <th>Billing Date</th>
-                    <th>File Reference</th>
-                    <th>Arrears State</th>
-                    <th>Actions</th>
-                    </tr>
-                </tfoot>
-                </table>
-            </div>
-        </div>
-
-      </div>
-    </section><!-- #services -->
-
-    <!--==========================
-      Call To Action Section
-    ============================-->
-    <section id="call-to-action" class="wow fadeInUp">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-9 text-center text-lg-left">
-            <h3 class="cta-title">Call To Action</h3>
-            <p class="cta-text"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-          <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="#">Call To Action</a>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- #call-to-action -->
+ 
 
 
 
@@ -204,36 +93,130 @@
     <section id="contact" class="wow fadeInUp">
       <div class="container">
         <div class="section-header">
-          <h2>Contact Us</h2>
-          <p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore</p>
+          <h2>Your Financial Arrears </h2>
+          <p>For suggestions and questions, Kindly drop your comments below..</p>
         </div>
+        <div class="row">
+        <div class="col-md-8">
+        <div class="card-block">
+            @foreach($arrear as $modal)
+            <form method="post" action="" enctype="multipart/form-data">
+            <div class="row">
+                <div class="col-sm-6"> 
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Debtor Details</label>
+                    <input type="text" name="debtor" class="form-control" value="{{ $modal->debtor }}" readonly>
+                </div>
+                </div>
 
-        <div class="row contact-info">
-
-          <div class="col-md-4">
-            <div class="contact-address">
-              <i class="ion-ios-location-outline"></i>
-              <h3>Address</h3>
-              <address>A108 Adam Street, NY 535022, USA</address>
+                <div class="col-sm-6">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Creditor Details</label>
+                    <input type="text" name="creditor" class="form-control" value="{{ $modal->creditor }}" readonly>
+                </div>
+                </div>
             </div>
-          </div>
+            <div class="row">
+                
+                <div class="col-sm-6">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Contract terms and penalties</label>
+                    <textarea class="form-control" name="contract_terms" rows="3" readonly>{{ $modal->contract_terms }}</textarea>
+                </div>
+                </div>
 
-          <div class="col-md-4">
-            <div class="contact-phone">
-              <i class="ion-ios-telephone-outline"></i>
-              <h3>Phone Number</h3>
-              <p><a href="tel:+155895548855">+1 5589 55488 55</a></p>
+                <div class="col-sm-6">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Contact Information</label>
+                    <textarea class="form-control" name="contact" rows="3" readonly>{{ $modal->contact }}</textarea>
+                </div>
+                </div>
             </div>
-          </div>
+            <div class="row">
+                <div class="col-sm-6"> 
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Effective/Billing Date</label>
+                    <input type="date" name="billing_date" class="form-control" readonly value="{{ $modal->billing_date }}">
+                </div>
+                </div>
 
-          <div class="col-md-4">
-            <div class="contact-email">
-              <i class="ion-ios-email-outline"></i>
-              <h3>Email</h3>
-              <p><a href="mailto:info@example.com">info@example.com</a></p>
+                <div class="col-sm-6">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Amount Settled/Part Paid</label>
+                    <input type="text" name="amount_settled" class="form-control" readonly value="{{ $modal->amount_settled }}">
+                </div>
+                </div>
             </div>
-          </div>
+            <div class="row">
+                <div class="col-sm-6"> 
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Nature of the Debt</label>
+                    <input type="text" name="nature_of_debt" class="form-control" readonly value="{{ $modal->nature_of_debt }}">
+                </div>
+                </div>
 
+                <div class="col-sm-6"> 
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Arrears Owed</label>
+                    <input type="text" name="arrears_owed" class="form-control" readonly value="{{ $modal->arrears_owed }}">
+                </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4"> 
+                <div class="form-group">
+                    <label for="exampleInputPassword1">File Reference</label>
+                    <input type="text" name="file_reference" class="form-control" readonly value="{{ $modal->file_reference }}">
+                </div>
+                </div>
+
+                <div class="col-sm-4"> 
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Economic Category</label>
+                    <input type="text" name="economic_category" class="form-control" readonly value="{{ $modal->economic_category }}">
+                </div>
+                </div>
+
+                <div class="col-sm-4"> 
+                <div class="form-group">
+                    <label for="exampleInputPassword1">State of Arrears</label>
+                    <input type="text" name="arrears_state" class="form-control" readonly value="{{ $modal->arrears_state }}">
+                </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Comments, including note on risk of non-payment</label>
+                    <textarea class="form-control" name="comments" rows="4" readonly>{{ $modal->comments }}</textarea>
+                </div>
+                </div>
+            </div>
+            <!-- <button type="submit" class="btn btn-primary btn-sm pull-right">Add arrears record</button> -->
+            </form>
+            @endforeach
+        </div>
+        </div>
+        <div class="col-md-4">
+            <form action="" method="post">
+                <div class="form-row">
+                <div class="form-group col-sm-12">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <div class="validation"></div>
+                </div>
+                <div class="form-group col-sm-12">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                    <div class="validation"></div>
+                </div>
+                <div class="form-group col-sm-12">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <div class="validation"></div>
+                </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-sm btn-block">Drop Your Comment</button>
+            </form>
+        </div>
         </div>
       </div>
 
@@ -306,18 +289,6 @@
   <script src="frontend/lib/owlcarousel/owl.carousel.min.js"></script>
   <script src="frontend/lib/magnific-popup/magnific-popup.min.js"></script>
   <script src="frontend/lib/sticky/sticky.js"></script>
-
-  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
-  <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
-  <script>
-      $(document).ready(function() {
-            $('#example').DataTable();
-        } );
-  </script>
-
-  <!-- Template Main Javascript File -->
-  <script src="frontend/js/main.js"></script>
 
 </body>
 </html>
