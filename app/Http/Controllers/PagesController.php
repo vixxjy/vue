@@ -4,24 +4,16 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Database\QueryException;
-use App\Repositories\News\NewsContract;
-use App\Repositories\Posts\PostContract;
-use App\Repositories\Slider\SliderContract;
+use App\Arrear;
+
 
 class PagesController extends Controller
 {
-    protected $repo;
-        public function __construct(NewsContract $NewsContract, PostContract $postContract, SliderContract $sliderContract) {
-        $this->repo = $NewsContract;
-        $this->repos = $postContract;
-        $this->reposi = $sliderContract;
-    }
 
-    public function index() {
-        $news = $this->repo->getAll();
-        $posts = $this->repos->getAll();
-        $sliders = $this->reposi->getAll();
-        return view('welcome')->with('news', $news)->with(compact('posts'))->with(compact('sliders'));
+    public function index(Request $request) {
+        $datas = Arrear::orderBy('id','DESC')->get();
+        return view('welcome',compact('datas'))
+        ->with('i', ($request->input('page', 1) - 1) * 5);
     }
 
     public function show($slug) {

@@ -15,23 +15,19 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
 
   <!-- Bootstrap CSS File -->
-  <link href="frontend/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Libraries CSS Files -->
-  <link href="frontend/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="frontend/lib/animate/animate.min.css" rel="stylesheet">
-  <link href="frontend/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <link href="frontend/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="frontend/lib/magnific-popup/magnific-popup.css" rel="stylesheet">
-  <link href="frontend/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-
-   <link href="frontend/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
 
-   <link href="frontend/css/style.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css" rel="stylesheet">
-  <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet">
 
 </head>
 
@@ -43,7 +39,7 @@
   <section id="topbar" class="d-none d-lg-block">
     <div class="container clearfix">
       <div class="contact-info float-left">
-        <i class="fa fa-envelope-o"></i> <a href="#">contact@example.com</a>
+        <i class="fa fa-envelope-o"></i> <a href="mailto:contact@example.com">contact@example.com</a>
         <i class="fa fa-phone"></i> +1 5589 55488 55
       </div>
       <div class="social-links float-right">
@@ -64,7 +60,7 @@
 
       <div id="logo" class="pull-left">
         <!-- <h1><a href="#body" class="scrollto">Reve<span>al</span></a></h1> -->
-        <img src="https://finance.plateaustate.gov.ng/wp-content/uploads/2019/09/mof-e1569926458948.png" style="width: 80px; height: 60px;" alt="logo.png">
+        <img src="https://finance.plateaustate.gov.ng/wp-content/uploads/2019/09/mof-e1569926458948.png" style="width: 100px; height: 80px;" alt="logo.png">
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
       </div>
@@ -93,11 +89,11 @@
     </div>
 
     <div id="intro-carousel" class="owl-carousel" >
-      <div class="item" style="background-image: url('frontend/img/intro-carousel/1.jpg');"></div>
-      <div class="item" style="background-image: url('frontend/img/intro-carousel/2.jpg');"></div>
-      <div class="item" style="background-image: url('frontend/img/intro-carousel/3.jpg');"></div>
-      <div class="item" style="background-image: url('frontend/img/intro-carousel/4.jpg');"></div>
-      <div class="item" style="background-image: url('frontend/img/intro-carousel/5.jpg');"></div>
+      <div class="item" style="background-image: url('img/intro-carousel/1.jpg');"></div>
+      <div class="item" style="background-image: url('img/intro-carousel/2.jpg');"></div>
+      <div class="item" style="background-image: url('img/intro-carousel/3.jpg');"></div>
+      <div class="item" style="background-image: url('img/intro-carousel/4.jpg');"></div>
+      <div class="item" style="background-image: url('img/intro-carousel/5.jpg');"></div>
     </div>
 
   </section><!-- #intro -->
@@ -111,66 +107,8 @@
     <section id="services">
       <div class="container">
         <div class="section-header">
-          <h2>Review Arrears </h2>
-          <p>Know and review all arrears for all MDA(s), Contractors and Clients</p>
-            <hr>
-          <div class="card-block">
-                <div class="dt-responsive table-responsive">
-                <table id="example" class="table table-striped table-bordered nowrap">
-                    <thead>
-                    <tr>
-                    <th>Debtor</th>
-                    <th>Creditor</th>
-                    <th>Arrears Owed</th>
-                    <th>Billing Date</th>
-                    <th>File Reference</th>
-                    <th>Arrears State</th>
-                    <th>Actions</th>
-                    </tr>
-                </thead>
-                <tbody>
-                @if(count($datas) > 0)
-                    @foreach($datas as $data)
-                    <tr>
-                        <!-- <td>{{ ++$i }}</td> -->
-                        <td>{{ $data->debtor }}</td>
-                        <td>{{ $data->creditor }}</td>
-                        <td>{{ $data->arrears_owed }}</td>
-                        <td>{{ $data->billing_date }}</td>
-                        <td>{{ $data->file_reference }}</td>
-                        <td>{{ $data->arrears_state }}</td>
-                        <!-- <td>{{ $data->created_at->format('F d, Y h:ia') }}</td> -->
-
-                        <td className="text-right">
-                            <a href="{{route('arrears.show', $data->slug)}}">
-                            <button class="btn btn-info btn-sm">
-                                <span class="glyphicon glyphicon-eye-open">View more</span>
-                            </button>
-                            </a>
-                        </td>
-                    </tr>
-                    @endforeach
-                @else
-                    <tr>
-                    <td colspan="8" class="text-center">
-                        <h4 class="card-title">No Arrears Recorded.</h4>
-                    </td>
-                    </tr>
-                @endif
-                </tbody>
-                <tfoot>
-                    <tr>
-                    <th>Debtor</th>
-                    <th>Creditor</th>
-                    <th>Arrears Owed</th>
-                    <th>Billing Date</th>
-                    <th>File Reference</th>
-                    <th>Arrears State</th>
-                    <th>Actions</th>
-                    </tr>
-                </tfoot>
-                </table>
-            </div>
+          <h2>Services</h2>
+          <p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore</p>
         </div>
 
         <div class="row">
@@ -245,7 +183,7 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22864.11283411948!2d-73.96468908098944!3d40.630720240038435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sbg!4v1540447494452" width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
 
-      <!-- <div class="container">
+      <div class="container">
         <div class="form">
           <div id="sendmessage">Your message has been sent. Thank you!</div>
           <div id="errormessage"></div>
@@ -270,7 +208,7 @@
             </div>
             <div class="text-center"><button type="submit">Send Message</button></div>
           </form>
-        </div> -->
+        </div>
 
       </div>
     </section><!-- #contact -->
@@ -283,7 +221,7 @@
   <footer id="footer">
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong>Ministry of finance</strong>. All Rights Reserved
+        &copy; Copyright <strong>Reveal</strong>. All Rights Reserved
       </div>
       <div class="credits">
         <!--
@@ -292,7 +230,7 @@
           Licensing information: https://bootstrapmade.com/license/
           Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Reveal
         -->
-        Designed by <a href="#">Pictda</a>
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
   </footer><!-- #footer -->
@@ -300,25 +238,19 @@
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
   <!-- JavaScript Libraries -->
-  <script src="frontend/lib/jquery/jquery.min.js"></script>
-  <script src="frontend/lib/jquery/jquery-migrate.min.js"></script>
-  <script src="frontend/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="frontend/lib/easing/easing.min.js"></script>
-  <script src="frontend/lib/superfish/hoverIntent.js"></script>
-  <script src="frontend/lib/superfish/superfish.min.js"></script>
-  <script src="frontend/lib/wow/wow.min.js"></script>
-  <script src="frontend/lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="frontend/lib/magnific-popup/magnific-popup.min.js"></script>
-  <script src="frontend/lib/sticky/sticky.js"></script>
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+  <script src="lib/sticky/sticky.js"></script>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
-  <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
-  <script>
-      $(document).ready(function() {
-            $('#example').DataTable();
-        } );
-  </script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>

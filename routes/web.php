@@ -11,7 +11,7 @@
 |
 */
 
-// Route::get('/', 'PagesController@index')->name('home');
+Route::get('/', 'PagesController@index')->name('home');
 
 // Route::get('/', function () {
 //   return view('welcome');
@@ -30,7 +30,7 @@ Route::post('/contact-us', 'ContactController@postContactUs')->name('send_contac
 
 
 // auth
-Route::get('/',['uses' => 'AuthController@index', 'as' => 'login']);
+Route::get('/login',['uses' => 'AuthController@index', 'as' => 'login']);
 Route::post('/signin',['uses' => 'AuthController@login', 'as' => 'login.post']);
 
 

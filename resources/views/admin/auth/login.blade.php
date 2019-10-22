@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Plateau State Government House</title>
+    <title>Finance Debt Management Department</title>
 
 
     <!--[if lt IE 10]>
@@ -19,7 +19,7 @@
         content="bootstrap, bootstrap admin template, admin theme, admin dashboard, dashboard template, admin template, responsive" />
     <meta name="author" content="colorlib" />
 
-    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="https://finance.plateaustate.gov.ng/wp-content/uploads/2019/09/mof-e1569926458948.png" type="image/x-icon">
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:500,700" rel="stylesheet">
