@@ -15,21 +15,21 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
 
   <!-- Bootstrap CSS File -->
-  <link href="frontend/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="{{ asset('frontend/lib/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
 
   <!-- Libraries CSS Files -->
-  <link href="frontend/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="frontend/lib/animate/animate.min.css" rel="stylesheet">
-  <link href="frontend/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <link href="frontend/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="frontend/lib/magnific-popup/magnific-popup.css" rel="stylesheet">
-  <link href="frontend/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="{{ asset('frontend/lib/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
+  <link href="{{ asset('frontend/lib/animate/animate.min.css')}}" rel="stylesheet">
+  <link href="{{ asset('frontend/lib/ionicons/css/ionicons.min.css')}}" rel="stylesheet">
+  <link href="{{ asset('frontend/lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
+  <link href="{{ asset('frontend/lib/magnific-popup/magnific-popup.css')}}" rel="stylesheet">
+  <link href="{{ asset('frontend/lib/ionicons/css/ionicons.min.css')}}" rel="stylesheet">
 
-   <link href="frontend/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+   <link href="{{ asset('frontend/lib/ionicons/css/ionicons.min.css')}}" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
 
-   <link href="frontend/css/style.css" rel="stylesheet">
+   <link href="{{ asset('frontend/css/style.css')}}" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css" rel="stylesheet">
   <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet">
 
@@ -280,16 +280,16 @@
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
   <!-- JavaScript Libraries -->
-  <script src="frontend/lib/jquery/jquery.min.js"></script>
-  <script src="frontend/lib/jquery/jquery-migrate.min.js"></script>
-  <script src="frontend/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="frontend/lib/easing/easing.min.js"></script>
-  <script src="frontend/lib/superfish/hoverIntent.js"></script>
-  <script src="frontend/lib/superfish/superfish.min.js"></script>
-  <script src="frontend/lib/wow/wow.min.js"></script>
-  <script src="frontend/lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="frontend/lib/magnific-popup/magnific-popup.min.js"></script>
-  <script src="frontend/lib/sticky/sticky.js"></script>
+  <script src="{{ asset('frontend/lib/jquery/jquery.min.js')}}"></script>
+  <script src="{{ asset('frontend/lib/jquery/jquery-migrate.min.js')}}"></script>
+  <script src="{{ asset('frontend/lib/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{ asset('frontend/lib/easing/easing.min.js')}}"></script>
+  <script src="{{ asset('frontend/lib/superfish/hoverIntent.js')}}"></script>
+  <script src="{{ asset('frontend/lib/superfish/superfish.min.js')}}"></script>
+  <script src="{{ asset('frontend/lib/wow/wow.min.js')}}"></script>
+  <script src="{{ asset('frontend/lib/owlcarousel/owl.carousel.min.js')}}"></script>
+  <script src="{{ asset('frontend/lib/magnific-popup/magnific-popup.min.js')}}"></script>
+  <script src="{{ asset('frontend/lib/sticky/sticky.js')}}"></script>
 
 </body>
 </html>

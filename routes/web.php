@@ -12,7 +12,7 @@
 */
 
 Route::get('/', 'PagesController@index')->name('home');
-Route::get('/{slug}', 'PagesController@show')->name('show.arrears');
+Route::get('/contractors/{slug}', 'PagesController@show')->name('show.arrears');
 
 
 if (env('APP_ENV') === 'production') {
