@@ -74,6 +74,7 @@
           <li class="menu-active"><a href="/">Home</a></li>
           <li><a href="#services">Arrears</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="{{ route('login') }}">Login</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>

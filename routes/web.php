@@ -14,24 +14,13 @@
 Route::get('/', 'PagesController@index')->name('home');
 Route::get('/{slug}', 'PagesController@show')->name('show.arrears');
 
-// Route::get('/', function () {
-//   return view('welcome');
-// })->name('home');
+
 if (env('APP_ENV') === 'production') {
   \URL::forceScheme('https');
 }
 
-// Route::get('/', 'HomeController@index')->name('home');
-
-Route::get('/contact-us', function() {
-  return view('contact.contact');
-})->name('contact');
-
-Route::post('/contact-us', 'ContactController@postContactUs')->name('send_contact_us');
-
-
 // auth
-Route::get('/login',['uses' => 'AuthController@index', 'as' => 'login']);
+Route::get('/auth/login',['uses' => 'AuthController@index', 'as' => 'login']);
 Route::post('/signin',['uses' => 'AuthController@login', 'as' => 'login.post']);
 
 
