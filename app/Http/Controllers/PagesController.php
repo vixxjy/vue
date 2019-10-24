@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Database\QueryException;
 use App\Arrear;
+use App\Comment;
 
 
 class PagesController extends Controller
@@ -16,9 +17,10 @@ class PagesController extends Controller
         ->with('i', ($request->input('page', 1) - 1) * 5);
     }
 
-    public function show($slug) {
-        $arrear = Arrear::where('slug', $slug)->get();
-        return view('arrears')->with(compact('arrear'));
+    public function show($id) {
+        $arrear = Arrear::find($id);
+        $comments = Comment::orderBy('id','DESC')->paginate(3);
+        return view('arrears')->with(compact('arrear'))->with(compact('comments'));
     }
 
     public function showPosts($slug) {

@@ -12,7 +12,7 @@
 */
 
 Route::get('/', 'PagesController@index')->name('home');
-Route::get('/contractors/{slug}', 'PagesController@show')->name('show.arrears');
+Route::get('/contractors/{id}', 'PagesController@show')->name('show.arrears');
 
 
 if (env('APP_ENV') === 'production') {
@@ -22,6 +22,8 @@ if (env('APP_ENV') === 'production') {
 // auth
 Route::get('/auth/login',['uses' => 'AuthController@index', 'as' => 'login']);
 Route::post('/signin',['uses' => 'AuthController@login', 'as' => 'login.post']);
+
+Route::post('/comments/store',['uses' => 'CommentController@store', 'as' => 'comments.store']);
 
 
 Route::group( ['middleware' => ['auth']], function() {
@@ -76,4 +78,5 @@ Route::group( ['middleware' => ['auth']], function() {
   Route::get('/arrears-edit/{slug}',['uses' => 'ArrearController@edit', 'as' => 'arrears.edit']);
   Route::post('/arrears/update/{slug}',['uses' => 'ArrearController@update', 'as' => 'arrears.update']);
   Route::get('/arrears/delete/{slug}',['uses' => 'ArrearController@destroy', 'as' => 'arrears.delete']);
+
 });

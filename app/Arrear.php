@@ -21,4 +21,9 @@ class Arrear extends Model
         'arrears_state',
         'slug'
     ];
+
+    public function comments()
+    {
+        return $this->hasMany(Comment::class)->whereNull('parent_id');
+    }
 }

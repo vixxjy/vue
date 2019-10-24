@@ -144,7 +144,7 @@
                         <!-- <td>{{ $data->created_at->format('F d, Y h:ia') }}</td> -->
 
                         <td className="text-right">
-                            <a href="{{route('show.arrears', $data->slug)}}">
+                            <a href="{{route('show.arrears', $data->id)}}">
                             <button class="btn btn-info btn-sm">
                                 <span class="fa fa-eye-open">View more</span>
                             </button>
