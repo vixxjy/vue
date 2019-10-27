@@ -144,7 +144,7 @@
 
                                                     <div class="col-sm-4"> 
                                                     <div class="form-group">
-                                                        <label for="exampleInputPassword1">Economic Category</label>
+                                                        <label for="exampleInputPassword1">Arrears Category</label>
                                                         <input type="text" name="economic_category" class="form-control" readonly value="{{ $modal->economic_category }}">
                                                     </div>
                                                     </div>

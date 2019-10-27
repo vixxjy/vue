@@ -7,6 +7,7 @@ use App\Arrear;
 use App\MDA;
 use App\NatureOfDebt;
 use App\EconomicCategory;
+use App\ArrearsCategory;
 
 class ArrearController extends Controller
 {
@@ -25,8 +26,7 @@ class ArrearController extends Controller
     public function create(){
         $mdas = MDA::orderBy('id','DESC')->get();
         $debts = NatureOfDebt::orderBy('id','DESC')->get();
-        // dd($debts);
-        $categories = EconomicCategory::orderBy('id','DESC')->get();
+        $categories = ArrearsCategory::orderBy('id','DESC')->get();
         return view('admin.arrears.create', compact('mdas'))->with(compact('debts'))->with(compact('categories'));
     }
 
@@ -53,6 +53,7 @@ class ArrearController extends Controller
             $slug = preg_replace('/\s+/', '-', $str);
             $input = $request->all();
             $input['slug'] = $slug;
+            // dd($input);
 
             $user = Arrear::create($input);
 
@@ -80,8 +81,12 @@ class ArrearController extends Controller
        
         try {
         $arrear = Arrear::where('slug', $slug)->get();
+        $debts = NatureOfDebt::orderBy('id','DESC')->get();
+        $categories = ArrearsCategory::orderBy('id','DESC')->get();
+        $mdas = MDA::orderBy('id','DESC')->get();
         // dd($arrear);
-        return view('admin.arrears.edit', compact('arrear'))
+        return view('admin.arrears.edit', compact('arrear'))->with(compact('debts'))
+                        ->with(compact('categories'))->with(compact('mdas'))
                         ->with('success','Arrears Category deleted successfully');
         }catch (Exception $e) {
             echo 'Error: ' . $e->getMessage();

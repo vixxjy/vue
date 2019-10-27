@@ -126,7 +126,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="row">
-                                                    <div class="col-sm-6"> 
+                                                    <div class="col-sm-4"> 
                                                     <div class="form-group">
                                                         <label for="exampleInputPassword1">Nature of the Debt</label>
                                                         <!-- <input type="text" name="nature_of_debt" class="form-control" placeholder="nature of debt"> -->
@@ -140,7 +140,20 @@
                                                     </div>
                                                     </div>
 
-                                                    <div class="col-sm-6"> 
+                                                    <div class="col-sm-4"> 
+                                                    <div class="form-group">
+                                                        <label for="exampleInputPassword1">Arrears Type</label>
+                                                        <!-- <input type="text" name="nature_of_debt" class="form-control" placeholder="nature of debt"> -->
+                                                        <select class="form-control custom-select" id="inputGroupSelect01" name="arrears_type" value="{{ old('arrears_type')}}">
+                                                            <option value="{{ old('arrears_type')}}">{{ old('arrears_type')}}</option>
+                                                            <option value="outstanding">Outstanding</option>
+                                                            <option value="incurred">Incurred</option>
+                                                            <option value="settled">Settled</option>
+                                                        </select>
+                                                    </div>
+                                                    </div>
+
+                                                    <div class="col-sm-4"> 
                                                     <div class="form-group">
                                                         <label for="exampleInputPassword1">Arrears Owed</label>
                                                         <input type="text" name="arrears_owed" class="form-control" placeholder="arrears owed" value="{{ old('arrears_owed')}}">
@@ -157,11 +170,11 @@
 
                                                     <div class="col-sm-4"> 
                                                     <div class="form-group">
-                                                        <label for="exampleInputPassword1">Economic Category</label>
+                                                        <label for="exampleInputPassword1">Arrears Category</label>
                                                         <!-- <input type="text" name="economic_category" class="form-control" placeholder="News Title"> -->
                                                         <select class="form-control custom-select" id="inputGroupSelect01" name="economic_category" value="">
                                                             <option value="{{ old('economic_category')}}">{{ old('economic_category')}}</option>
-                                                            <option value="">Select Economic Category</option>
+                                                            <option value="">Select Arrears Category</option>
                                                             @foreach($categories as $new)
                                                             <option value="{{ $new->name }}">{{ $new->name }}</option>
                                                             @endforeach

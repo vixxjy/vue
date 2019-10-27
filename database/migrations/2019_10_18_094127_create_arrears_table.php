@@ -27,6 +27,7 @@ class CreateArrearsTable extends Migration
             $table->string('economic_category');
             $table->string('comments');
             $table->string('arrears_state');
+            // $table->string('arrears_type');
             $table->string('slug');
             $table->timestamps();
         });

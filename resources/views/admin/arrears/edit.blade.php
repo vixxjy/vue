@@ -77,7 +77,14 @@
                                                     <div class="col-sm-6"> 
                                                     <div class="form-group">
                                                         <label for="exampleInputPassword1">Debtor Details</label>
-                                                        <input type="text" name="debtor" class="form-control" value="{{ $modal->debtor }}">
+                                                        <!-- <input type="text" name="debtor" class="form-control" value="{{ $modal->debtor }}"> -->
+                                                        <select class="form-control custom-select" id="inputGroupSelect01" name="debtor" value="{{ old('debtor')}}">
+                                                            <option value="{{ $modal->debtor }}">{{ $modal->debtor }}</option>
+                                                            <option value="">Select MDA (Debtor)</option>
+                                                            @foreach($mdas as $new)
+                                                            <option value="{{ $new->name }}">{{ $new->name }}</option>
+                                                            @endforeach
+                                                        </select>
                                                     </div>
                                                     </div>
 
@@ -120,14 +127,34 @@
                                                     </div>
                                                 </div>
                                                 <div class="row">
-                                                    <div class="col-sm-6"> 
+                                                    <div class="col-sm-4"> 
                                                     <div class="form-group">
                                                         <label for="exampleInputPassword1">Nature of the Debt</label>
-                                                        <input type="text" name="nature_of_debt" class="form-control" value="{{ $modal->nature_of_debt }}">
+                                                        <!-- <input type="text" name="nature_of_debt" class="form-control" placeholder="nature of debt"> -->
+                                                        <select class="form-control custom-select" id="inputGroupSelect01" name="nature_of_debt" value="{{ old('nature_of_debt')}}">
+                                                            <option value="{{ $modal->nature_of_debt }}">{{ $modal->nature_of_debt }}</option>
+                                                            <option value="">Select Nature of Debt</option>
+                                                            @foreach($debts as $new)
+                                                            <option value="{{ $new['nature_of_debt'] }}">{{ $new['nature_of_debt'] }}</option>
+                                                            @endforeach
+                                                        </select>
                                                     </div>
                                                     </div>
 
-                                                    <div class="col-sm-6"> 
+                                                    <div class="col-sm-4"> 
+                                                    <div class="form-group">
+                                                        <label for="exampleInputPassword1">Arrears Type</label>
+                                                        <!-- <input type="text" name="nature_of_debt" class="form-control" placeholder="nature of debt"> -->
+                                                        <select class="form-control custom-select" id="inputGroupSelect01" name="arrears_type" value="{{ old('arrears_type')}}">
+                                                            <option value="{{ $modal->arrears_type }}">{{ $modal->arrears_type }}</option>
+                                                            <option value="outstanding">Outstanding</option>
+                                                            <option value="incurred">Incurred</option>
+                                                            <option value="settled">Settled</option>
+                                                        </select>
+                                                    </div>
+                                                    </div>
+
+                                                    <div class="col-sm-4"> 
                                                     <div class="form-group">
                                                         <label for="exampleInputPassword1">Arrears Owed</label>
                                                         <input type="text" name="arrears_owed" class="form-control" value="{{ $modal->arrears_owed }}">
@@ -144,15 +171,29 @@
 
                                                     <div class="col-sm-4"> 
                                                     <div class="form-group">
-                                                        <label for="exampleInputPassword1">Economic Category</label>
-                                                        <input type="text" name="economic_category" class="form-control" value="{{ $modal->economic_category }}">
+                                                        <label for="exampleInputPassword1">Arrears Category</label>
+                                                        <!-- <input type="text" name="economic_category" class="form-control" placeholder="News Title"> -->
+                                                        <select class="form-control custom-select" id="inputGroupSelect01" name="economic_category" value="">
+                                                            <option value="{{ $modal->economic_category}}">{{ $modal->economic_category }}</option>
+                                                            <option value="">Select Arrears Category</option>
+                                                            @foreach($categories as $new)
+                                                            <option value="{{ $new->name }}">{{ $new->name }}</option>
+                                                            @endforeach
+                                                        </select>
                                                     </div>
                                                     </div>
 
                                                     <div class="col-sm-4"> 
                                                     <div class="form-group">
                                                         <label for="exampleInputPassword1">State of Arrears</label>
-                                                        <input type="text" name="arrears_state" class="form-control" value="{{ $modal->arrears_state }}">
+                                                        <!-- <input type="text" name="arrears_state" class="form-control" value=""> -->
+                                                        <select class="form-control custom-select" id="inputGroupSelect01" name="arrears_state" value="">
+                                                            <option value="{{ $modal->arrears_state }}">{{ $modal->arrears_state }}</option>
+                                                            <option value="">Select State of Arrears record</option>
+                                                            <option value="verified">Verified</option>
+                                                            <option value="contested">Contested</option>
+                                                            <option value="rejected">Rejected</option>
+                                                        </select>
                                                     </div>
                                                     </div>
 

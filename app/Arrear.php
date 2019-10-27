@@ -19,6 +19,7 @@ class Arrear extends Model
         'economic_category',
         'comments',
         'arrears_state',
+        'arrears_type',
         'slug'
     ];
 
