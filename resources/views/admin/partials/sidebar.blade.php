@@ -71,13 +71,13 @@
                         <!-- <span class="pcoded-badge label label-primary">sub-menus</span> -->
                     </a>
                 </li>
-                <!-- <li class="pcoded-hasmenu">
-                    <a href="#" class="waves-effect waves-dark">
+                <li class="pcoded-hasmenu">
+                    <a href="{{ route('reports.index')}}" class="waves-effect waves-dark">
                         <span class="pcoded-micon"><i class="feather icon-sidebar"></i></span>
-                        <span class="pcoded-mtext">Support</span>
+                        <span class="pcoded-mtext">Reports</span>
                    
                     </a>
-                </li> -->
+                </li>
             </ul>
         </div>
     </div>

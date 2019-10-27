@@ -78,5 +78,6 @@ Route::group( ['middleware' => ['auth']], function() {
   Route::get('/arrears-edit/{slug}',['uses' => 'ArrearController@edit', 'as' => 'arrears.edit']);
   Route::post('/arrears/update/{slug}',['uses' => 'ArrearController@update', 'as' => 'arrears.update']);
   Route::get('/arrears/delete/{slug}',['uses' => 'ArrearController@destroy', 'as' => 'arrears.delete']);
-
+    //reports
+  Route::get('/reports',['uses' => 'ReportController@index', 'as' => 'reports.index']);
 });

@@ -5,7 +5,7 @@
   <title>Finance Debt Management Department</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
-  <meta content="" name="description">
+  <meta content="Plateau State Finance Ministry - Debt management Department" name="description">
 
   <!-- Favicons -->
   <link href="https://finance.plateaustate.gov.ng/wp-content/uploads/2019/09/mof-e1569926458948.png" rel="icon">
