@@ -92,10 +92,10 @@
                                                         <td></td>
                                                         <td></td>
                                                         <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
+                                                        <td>{{ $incurred_amount }}</td>
+                                                        <td>{{ $settled_amount }}</td>
+                                                        <td>{{ $outstanding_amount }}</td>
+                                                        <td>{{ $total1_changes }}</td>
                                                         <td></td>
                                                     </tr>
                                                     <tr>
@@ -105,10 +105,10 @@
                                                         <td></td>
                                                         <td></td>
                                                         <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
+                                                        <td>{{ $incurred_amount1 }}</td>
+                                                        <td>{{ $settled_amount1 }}</td>
+                                                        <td>{{ $outstanding_amount1 }}</td>
+                                                        <td>{{ $total2_changes }}</td>
                                                         <td></td>
                                                     </tr>
                                                     <tr>
@@ -118,10 +118,10 @@
                                                         <td></td>
                                                         <td></td>
                                                         <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
+                                                        <td>{{ $incurred_amount2 }}</td>
+                                                        <td>{{ $settled_amount2 }}</td>
+                                                        <td>{{ $outstanding_amount2 }}</td>
+                                                        <td>{{ $total3_changes }}</td>
                                                         <td></td>
                                                     </tr>
                                                     <tr>
@@ -157,10 +157,10 @@
                                                         <td></td>
                                                         <td></td>
                                                         <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
+                                                        <td>{{ $incurred_amount + $incurred_amount1 + $incurred_amount2 }}</td>
+                                                        <td>{{ $settled_amount + $settled_amount1 + $settled_amount2 }}</td>
+                                                        <td>{{ $outstanding_amount + $outstanding_amount1 + $outstanding_amount2 }}</td>
+                                                        <td>{{ $total1_changes + $total2_changes + $total3_changes }}</td>
                                                         <td></td>
                                                     </tr>
                                                 </tbody>
