@@ -64,7 +64,9 @@
                                                             </tr>
                                                         </thead>
                                                         <tbody>
-                                            
+                                                        <tr>
+                                                    
+                                                        </tr>
                                                         </tbody>
                                                         <tfoot>
                                                             <tr>
@@ -86,7 +88,7 @@
                                                             <div class="col">
                                                                 <h6 class="m-b-25">MDAs</h6>
                                                                 <h3 class="f-w-700 text-c-blue"></h3>
-                                                                <p class="m-b-0"></p>
+                                                                <p class="m-b-0">{{ $mdas->count() }}</p>
                                                             </div>
                                                             <!-- <div class="col-auto">
                                                                 <i class="fas fa-eye bg-c-blue"></i>
@@ -100,7 +102,7 @@
                                                             <div class="col">
                                                                 <h6 class="m-b-25">Economic Categories</h6>
                                                                 <h3 class="f-w-700 text-c-green"></h3>
-                                                                <p class="m-b-0"></p>
+                                                                <p class="m-b-0">{{ $economy->count() }}</p>
                                                             </div>
                                                             <!-- <div class="col-auto">
                                                                 <i class="fas fa-bullseye bg-c-green"></i>
@@ -114,7 +116,7 @@
                                                             <div class="col">
                                                                 <h6 class="m-b-25">Arrears Recorded</h6>
                                                                 <h3 class="f-w-700 text-c-yellow"></h3>
-                                                                <p class="m-b-0"></p>
+                                                                <p class="m-b-0">{{ $datas->count() }}</p>
                                                             </div>
                                                             <!-- <div class="col-auto">
                                                                 <i class="fas fa-hand-paper bg-c-yellow"></i>

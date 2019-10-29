@@ -12,7 +12,7 @@ class PagesController extends Controller
 {
 
     public function index(Request $request) {
-        $datas = Arrear::orderBy('id','DESC')->get();
+        $datas = Arrear::orderBy('id','DESC')->where('arrears_state', '=', 'verified')->get();
         return view('welcome',compact('datas'))
         ->with('i', ($request->input('page', 1) - 1) * 5);
     }
