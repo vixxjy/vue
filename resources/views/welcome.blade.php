@@ -43,15 +43,15 @@
   <section id="topbar" class="d-none d-lg-block">
     <div class="container clearfix">
       <div class="contact-info float-left">
-        <i class="fa fa-envelope-o"></i> <a href="#">contact@example.com</a>
-        <i class="fa fa-phone"></i> +1 5589 55488 55
+        <i class="fa fa-envelope-o"></i> <a href="#">debtmanagement@plateaustate.gov.ng</a>
+        <i class="fa fa-phone"></i> +234 901 661 1687
       </div>
       <div class="social-links float-right">
         <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
         <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+        <!-- <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
         <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a> -->
       </div>
     </div>
   </section>
@@ -86,9 +86,9 @@
   <section id="intro">
 
     <div class="intro-content">
-      <h2>Know <span>your Arrears</span><br>Today!</h2>
+      <h2>Know <span>your Arrears</span> Today!</h2>
       <div>
-        <a href="#about" class="btn-get-started scrollto">Get Started</a>
+        <a href="#services" class="btn-get-started scrollto">Get Started</a>
         <a href="#contact" class="btn-projects scrollto">Contact Us</a>
       </div>
     </div>
@@ -112,8 +112,8 @@
     <section id="services">
       <div class="container-fluid">
         <div class="section-header">
-          <h2>Review Arrears </h2>
-          <p>Know and review all arrears for all MDA(s), Contractors and Clients</p>
+          <h2>Confirm the State of Your Arrears </h2>
+          <!-- <p>Know and review all arrears for all MDA(s), Contractors and Clients</p> -->
             <hr>
           <div class="card-block">
                 <div class="dt-responsive table-responsive">
@@ -185,13 +185,13 @@
     <section id="call-to-action" class="wow fadeInUp">
       <div class="container">
         <div class="row">
-          <div class="col-lg-9 text-center text-lg-left">
-            <h3 class="cta-title">Call To Action</h3>
-            <p class="cta-text"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <div class="col-lg-12 text-center text-lg-left">
+            <h3 class="cta-title">BRIEF ON THE PLATEAU STATE DEBT MANAGEMENT DEPARTMENT</h3>
+            <p class="cta-text"> Following Nigeria’s exit from the Parish and London Club debt obligations, the Debt Management Office (DMO) developed the External Borrowing Guidelines (2008-2012), as well as the Subnational Borrowing Guidelines to guide the Federal and State Governments, as well as their Agencies towards external and domestic borrowings with a view to avoiding a relapse into debt unsustainability.</p>
           </div>
-          <div class="col-lg-3 cta-btn-container text-center">
+          <!-- <div class="col-lg-3 cta-btn-container text-center">
             <a class="cta-btn align-middle" href="#">Call To Action</a>
-          </div>
+          </div> -->
         </div>
 
       </div>
@@ -206,7 +206,7 @@
       <div class="container">
         <div class="section-header">
           <h2>Contact Us</h2>
-          <p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore</p>
+          <!-- <p>Kindly reach out </p> -->
         </div>
 
         <div class="row contact-info">
@@ -215,7 +215,7 @@
             <div class="contact-address">
               <i class="ion-ios-location-outline"></i>
               <h3>Address</h3>
-              <address>A108 Adam Street, NY 535022, USA</address>
+              <address>Joseph Gomwalk | State Secretariate | Jos</address>
             </div>
           </div>
 
@@ -223,7 +223,7 @@
             <div class="contact-phone">
               <i class="ion-ios-telephone-outline"></i>
               <h3>Phone Number</h3>
-              <p><a href="tel:+155895548855">+1 5589 55488 55</a></p>
+              <p><a href="tel:+234 901 661 1687">+234 901 661 1687</a></p>
             </div>
           </div>
 
@@ -231,7 +231,7 @@
             <div class="contact-email">
               <i class="ion-ios-email-outline"></i>
               <h3>Email</h3>
-              <p><a href="mailto:info@example.com">info@example.com</a></p>
+              <p><a href="mailto:info@example.com">debtmanagement@plateaustate.gov.ng</a></p>
             </div>
           </div>
 
