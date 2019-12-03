@@ -111,14 +111,21 @@
                                                     </div>
                                                 </div>
                                                 <div class="row">
-                                                    <div class="col-sm-6"> 
+                                                    <div class="col-sm-4"> 
                                                     <div class="form-group">
                                                         <label for="exampleInputPassword1">Effective/Billing Date</label>
                                                         <input type="date" name="billing_date" class="form-control" placeholder="billing date" value="{{ old('billing_date')}}">
                                                     </div>
                                                     </div>
 
-                                                    <div class="col-sm-6">
+                                                    <div class="col-sm-4"> 
+                                                    <div class="form-group">
+                                                        <label for="exampleInputPassword1">Date of Entry</label>
+                                                        <input type="date" name="date_of_entry" class="form-control" value="{{ old('date_of_entry')}}">
+                                                    </div>
+                                                    </div>
+
+                                                    <div class="col-sm-4">
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">Amount Settled/Part Paid</label>
                                                         <input type="text" name="amount_settled" class="form-control" placeholder="amount settled" value="{{ old('amount_settled')}}">

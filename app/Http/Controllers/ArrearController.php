@@ -45,6 +45,7 @@ class ArrearController extends Controller
             'file_reference' => 'required',
             'economic_category' => 'required',
             'arrears_state' => 'required',
+            'date_of_entry' => 'required'
         ]);
 
         try {

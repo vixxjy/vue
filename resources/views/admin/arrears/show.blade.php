@@ -72,7 +72,7 @@
                                             @foreach($arrear as $modal)
                                             <form method="post" action="" enctype="multipart/form-data">
 
-                                                {{ csrf_field() }}
+                                                <!-- {{ csrf_field() }} -->
                                                 <div class="row">
                                                     <div class="col-sm-6"> 
                                                     <div class="form-group">
@@ -105,14 +105,21 @@
                                                     </div>
                                                 </div>
                                                 <div class="row">
-                                                    <div class="col-sm-6"> 
+                                                    <div class="col-sm-4"> 
                                                     <div class="form-group">
                                                         <label for="exampleInputPassword1">Effective/Billing Date</label>
                                                         <input type="date" name="billing_date" class="form-control" readonly value="{{ $modal->billing_date }}">
                                                     </div>
                                                     </div>
 
-                                                    <div class="col-sm-6">
+                                                    <div class="col-sm-4"> 
+                                                    <div class="form-group">
+                                                        <label for="exampleInputPassword1">Date of entry</label>
+                                                        <input type="date" name="billing_date" class="form-control" readonly value="{{ $modal->date_of_entry }}">
+                                                    </div>
+                                                    </div>
+
+                                                    <div class="col-sm-4">
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">Amount Settled/Part Paid</label>
                                                         <input type="text" name="amount_settled" class="form-control" readonly value="{{ $modal->amount_settled }}">

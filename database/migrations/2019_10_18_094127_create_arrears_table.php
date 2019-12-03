@@ -20,6 +20,7 @@ class CreateArrearsTable extends Migration
             $table->string('contact');
             $table->string('arrears_owed');
             $table->string('billing_date');
+            $table->string('date_of_entry');
             $table->string('amount_settled');
             $table->string('nature_of_debt');
             $table->string('contract_terms');

@@ -20,6 +20,7 @@ class Arrear extends Model
         'comments',
         'arrears_state',
         'arrears_type',
+        'date_of_entry',
         'slug'
     ];
 
