@@ -110,23 +110,24 @@
       Services Section
     ============================-->
     <section id="services">
-      <div class="container-fluid">
+      <div class="container">
         <div class="section-header">
           <h2>Confirm the State of Your Arrears </h2>
-          <!-- <p>Know and review all arrears for all MDA(s), Contractors and Clients</p> -->
+          <p>Type in your file reference number, creditor or debtor name in to the search input to verify your status</p>
             <hr>
           <div class="card-block">
                 <div class="dt-responsive table-responsive">
                 <table id="example" class="table table-striped table-bordered table-sm nowrap">
                     <thead>
                     <tr>
-                    <th>S/N</th>
+                    <!-- <th>S/N</th> -->
+                    <th>File No:</th>
                     <th>Debtor</th>
                     <th>Creditor</th>
                     <th>Arrears Owed</th>
                     <th>Billing Date</th>
-                    <th>File Reference</th>
-                    <th>Arrears State</th>
+                    <!-- <th>File Reference</th> -->
+                    <!-- <th>Arrears State</th> -->
                     <th>Actions</th>
                     </tr>
                 </thead>
@@ -134,13 +135,14 @@
                 @if(count($datas) > 0)
                     @foreach($datas as $data)
                     <tr>
-                        <td>{{ ++$i }}</td>
+                        <!-- <td>{{ ++$i }}</td> -->
+                        <td>{{ $data->file_reference }}</td>
                         <td>{{ $data->debtor }}</td>
                         <td>{{ $data->creditor }}</td>
                         <td>{{ $data->arrears_owed }}</td>
                         <td>{{ $data->billing_date }}</td>
-                        <td>{{ $data->file_reference }}</td>
-                        <td>{{ $data->arrears_state }}</td>
+                        
+                        <!-- <td>{{ $data->arrears_state }}</td> -->
                         <!-- <td>{{ $data->created_at->format('F d, Y h:ia') }}</td> -->
 
                         <td className="text-right">
@@ -162,13 +164,14 @@
                 </tbody>
                 <tfoot>
                     <tr>
-                    <th>S/N</th>
+                    <!-- <th>S/N</th> -->
+                    <th>File No:</th>
                     <th>Debtor</th>
                     <th>Creditor</th>
                     <th>Arrears Owed</th>
                     <th>Billing Date</th>
-                    <th>File Reference</th>
-                    <th>Arrears State</th>
+                    
+                    <!-- <th>Arrears State</th> -->
                     <th>Actions</th>
                     </tr>
                 </tfoot>
