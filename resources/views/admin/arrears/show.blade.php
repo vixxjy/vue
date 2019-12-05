@@ -122,7 +122,7 @@
                                                     <div class="col-sm-4">
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">Amount Settled/Part Paid</label>
-                                                        <input type="text" name="amount_settled" class="form-control" readonly value="{{ $modal->amount_settled }}">
+                                                        <input type="text" name="amount_settled" class="form-control" readonly value="{{ number_format($modal->amount_settled, 2) }}">
                                                     </div>
                                                     </div>
                                                 </div>
@@ -137,7 +137,7 @@
                                                     <div class="col-sm-6"> 
                                                     <div class="form-group">
                                                         <label for="exampleInputPassword1">Arrears Owed</label>
-                                                        <input type="text" name="arrears_owed" class="form-control" readonly value="{{ $modal->arrears_owed }}">
+                                                        <input type="text" name="arrears_owed" class="form-control" readonly value="{{ number_format($modal->arrears_owed, 2) }}">
                                                     </div>
                                                     </div>
                                                 </div>

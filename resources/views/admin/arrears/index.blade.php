@@ -91,7 +91,7 @@
                                                         <!-- <td>{{ ++$i }}</td> -->
                                                         <td>{{ $data->debtor }}</td>
                                                         <td>{{ $data->creditor }}</td>
-                                                        <td>{{ $data->arrears_owed }}</td>
+                                                        <td>{{ number_format($data->arrears_owed, 2) }}</td>
                                                         <td>{{ $data->billing_date }}</td>
                                                         <td>{{ $data->file_reference }}</td>
                                                         <td>{{ $data->arrears_state }}</td>
