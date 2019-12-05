@@ -92,10 +92,10 @@
                                                         <td></td>
                                                         <td></td>
                                                         <td></td>
-                                                        <td>{{ isset($incurred_amount) ? $incurred_amount : "" }}</td>
-                                                        <td>{{ isset($settled_amount) ? $settled_amount : "" }}</td>
-                                                        <td>{{ isset($outstanding_amount) ? $outstanding_amount : "" }}</td>
-                                                        <td>{{ isset($total1_changes) ? $total1_changes : "" }}</td>
+                                                        <td>{{ isset($incurred_amount) ? number_format($incurred_amount, 2) : "" }}</td>
+                                                        <td>{{ isset($settled_amount) ? number_format($settled_amount, 2) : "" }}</td>
+                                                        <td>{{ isset($outstanding_amount) ? number_format($outstanding_amount, 2) : "" }}</td>
+                                                        <td>{{ isset($total1_changes) ? number_format($total1_changes, 2) : "" }}</td>
                                                         <td></td>
                                                     </tr>
                                                     <tr>
@@ -105,10 +105,10 @@
                                                         <td></td>
                                                         <td></td>
                                                         <td></td>
-                                                        <td>{{ isset($incurred_amount1) ? $incurred_amount1 : "" }}</td>
-                                                        <td>{{ isset($settled_amount1) ? $settled_amount1 : "" }}</td>
-                                                        <td>{{ isset($outstanding_amount1) ? $outstanding_amount1 : "" }}</td>
-                                                        <td>{{ isset($total2_changes) ? $total2_changes : ""}}</td>
+                                                        <td>{{ isset($incurred_amount1) ? number_format($incurred_amount1, 2) : "" }}</td>
+                                                        <td>{{ isset($settled_amount1) ? number_format($settled_amount1, 2) : "" }}</td>
+                                                        <td>{{ isset($outstanding_amount1) ? number_format($outstanding_amount1, 2) : "" }}</td>
+                                                        <td>{{ isset($total2_changes) ? number_format($total2_changes, 2) : ""}}</td>
                                                         <td></td>
                                                     </tr>
                                                     <tr>
@@ -118,10 +118,10 @@
                                                         <td></td>
                                                         <td></td>
                                                         <td></td>
-                                                        <td>{{ isset($incurred_amount2) ? $incurred_amount2 : "" }}</td>
-                                                        <td>{{ isset($settled_amount2) ? $settled_amount2 : "" }}</td>
-                                                        <td>{{ isset($outstanding_amount2) ? $outstanding_amount2 : "" }}</td>
-                                                        <td>{{ isset($total3_changes) ? $total3_changes : "" }}</td>
+                                                        <td>{{ isset($incurred_amount2) ? number_format($incurred_amount2, 2) : "" }}</td>
+                                                        <td>{{ isset($settled_amount2) ? number_format($settled_amount2, 2) : "" }}</td>
+                                                        <td>{{ isset($outstanding_amount2) ? number_format($outstanding_amount2, 2) : "" }}</td>
+                                                        <td>{{ isset($total3_changes) ? number_format($total3_changes, 2) : "" }}</td>
                                                         <td></td>
                                                     </tr>
                                                     <tr>
@@ -157,10 +157,10 @@
                                                         <td></td>
                                                         <td></td>
                                                         <td></td>
-                                                        <td>{{ isset($incurred_amount) + isset($incurred_amount1) + isset($incurred_amount2) ? $incurred_amount + $incurred_amount1 + $incurred_amount2 : "" }}</td>
-                                                        <td>{{ isset($settled_amount) + isset($settled_amount1) + isset($settled_amount2) ? $settled_amount + $settled_amount1 + $settled_amount2 : ""}}</td>
-                                                        <td>{{ isset($outstanding_amount) + isset($outstanding_amount1) + isset($outstanding_amount2) ? $outstanding_amount + $outstanding_amount1 + $outstanding_amount2 : "" }}</td>
-                                                        <td>{{ isset($total1_changes) + isset($total2_changes) + isset($total3_changes) ? $total1_changes + $total2_changes + $total3_changes : "" }}</td>
+                                                        <td>{{ isset($incurred_amount) + isset($incurred_amount1) + isset($incurred_amount2) ? number_format($incurred_amount + $incurred_amount1 + $incurred_amount2, 2) : "" }}</td>
+                                                        <td>{{ isset($settled_amount) + isset($settled_amount1) + isset($settled_amount2) ? number_format($settled_amount + $settled_amount1 + $settled_amount2, 2) : ""}}</td>
+                                                        <td>{{ isset($outstanding_amount) + isset($outstanding_amount1) + isset($outstanding_amount2) ? number_format($outstanding_amount + $outstanding_amount1 + $outstanding_amount2, 2) : "" }}</td>
+                                                        <td>{{ isset($total1_changes) + isset($total2_changes) + isset($total3_changes) ? number_format($total1_changes + $total2_changes + $total3_changes, 2) : "" }}</td>
                                                         <td></td>
                                                     </tr>
                                                 </tbody>
