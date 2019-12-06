@@ -92,12 +92,39 @@ class ReportController extends Controller
                 }
 
                 $total3_changes = $outstanding_amount2+ $incurred_amount2 + $settled_amount2;
+
+                // judgement Debt
+                $arrears_by_outstanding4 = Arrear::where('arrears_type', '=', 'outstanding')
+                ->where('economic_category', '=', 'Other-Arrears-Type-X')->get();
+                $arrears_by_incurred4 = Arrear::where('arrears_type', '=', 'incurred')
+                    ->where('economic_category', '=', 'Other-Arrears-Type-X')->get();
+                $arrears_by_settled4 = Arrear::where('arrears_type', '=', 'settled')
+                    ->where('economic_category', '=', 'Other-Arrears-Type-X')->get();
+
+                $incurred_amount3 = 0;
+                $outstanding_amount3 = 0;
+                $settled_amount3 = 0;
+
+                foreach($arrears_by_outstanding4 as $outstanding) {
+                    $outstanding_amount3 += $outstanding->amount_settled;
+                }
+
+                foreach($arrears_by_incurred4 as $incurred) {
+                    $incurred_amount3 += $incurred->amount_settled;
+                }
+
+                foreach($arrears_by_settled4 as $settled) {
+                    $settled_amount3 += $settled->amount_settled;
+                }
+
+                $total4_changes = $outstanding_amount3+ $incurred_amount3 + $settled_amount3;
                 
                 
                 return view('admin.reports.index',compact('incurred_amount', 'settled_amount',
                 'outstanding_amount', 'incurred_amount1', 'settled_amount1', 'outstanding_amount1'
-                , 'incurred_amount2', 'settled_amount2', 'outstanding_amount2', 'total1_changes',
-                'total2_changes', 'total3_changes'));
+                , 'incurred_amount2', 'settled_amount2', 'outstanding_amount2', 'outstanding_amount3', 
+                'incurred_amount3', 'settled_amount3', 'total1_changes', 'total2_changes', 'total3_changes',
+            '$total4_changes'));
             // }else{
             //     return view('admin.reports.index');
             // }

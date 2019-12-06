@@ -48,6 +48,7 @@ class UsersTableSeeder extends Seeder
         $arrear->save();
         $arrear = new \App\ArrearsCategory([
             'name' => 'Other Arrears - Type X',
+            // 'name' => 'Judgement Debt',
             'slug' => 'Other-Arrears-Type-X'
         ]);
         $arrear->save();

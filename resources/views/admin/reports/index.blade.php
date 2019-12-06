@@ -126,15 +126,16 @@
                                                     </tr>
                                                     <tr>
                                                         <td>4</td>
-                                                        <td>Other Arrears - Type X</td>
+                                                        <!-- <td>Other Arrears - Type X</td> -->
+                                                        <td>Judgement Debt</td>
                                                         <td></td>
                                                         <td></td>
                                                         <td></td>
                                                         <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
+                                                        <td>{{ isset($incurred_amount3) ? number_format($incurred_amount3, 2) : "" }}</td>
+                                                        <td>{{ isset($settled_amount3) ? number_format($settled_amount3, 2) : "" }}</td>
+                                                        <td>{{ isset($outstanding_amount3) ? number_format($outstanding_amount3, 2) : "" }}</td>
+                                                        <td>{{ isset($total4_changes) ? number_format($total4_changes, 2) : "" }}</td>
                                                         <td></td>
                                                     </tr>
                                                     <tr>
