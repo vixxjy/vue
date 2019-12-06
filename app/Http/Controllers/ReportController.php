@@ -15,8 +15,10 @@ class ReportController extends Controller
     public function index(Request $request)
     {
         try {
-            // $arrears = Arrear::all();
-            // // dd(empty($arrears));
+            $year = date("Y");
+            $a_year_back = $year - 1;
+            $two_years_back = $year - 2;
+
             // if (!$arrears) {
                 $arrears_by_outstanding1 = Arrear::where('arrears_type', '=', 'outstanding')
                     ->where('economic_category', '=', 'Contractor\'s Arrears')->get();

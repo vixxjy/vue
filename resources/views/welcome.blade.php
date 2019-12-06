@@ -90,10 +90,11 @@
       <div>
         <!-- <a href="#services" class="btn-get-started scrollto">Get Started</a>
         <a href="#contact" class="btn-projects scrollto">Contact Us</a> -->
-        <a href="https://plug-storage.s3.eu-west-3.amazonaws.com/1st_quarterly_2018.xlsx" class="btn-get-started scrollto">1st quarterly 2018</a>
-        <a href="https://plug-storage.s3.eu-west-3.amazonaws.com/2nd_and_3rd_quarter_2018.xlsx" class="btn-projects scrollto">2nd and 3rd quarter 2018</a>
-        <a href="https://plug-storage.s3.eu-west-3.amazonaws.com/4th_quarter_2018_1st_and_2nd_quarter_2019.xlsx" class="btn-get-started scrollto">4th quarter 2018, 1st and 2nd quarter 2019</a>
-        <a href="https://plug-storage.s3.eu-west-3.amazonaws.com/3rd_quarter_2019.xlsx" class="btn-projects scrollto">3rd quarter 2019</a>
+        <a href="https://plug-storage.s3.eu-west-3.amazonaws.com/20190916_Domestic_Arrears_Guidelines_Version_1.0_sent.docx" class="btn-get-started scrollto">Domestic Arrears Guidelines</a>
+        <a href="https://plug-storage.s3.eu-west-3.amazonaws.com/20191006_State_Domestic_Arrears_Oct_2019_Master_v3.pptx" class="btn-projects scrollto">State Domestic Arrears Oct 2019</a>
+        <a href="https://plug-storage.s3.eu-west-3.amazonaws.com/bill_establishing_PL_DMD.pdf" target="_blank" class="btn-get-started scrollto">Bill Establishing PL_DMD</a>
+        <a href="https://plug-storage.s3.eu-west-3.amazonaws.com/debt_mngt_clean.pdf" target="_blank" class="btn-projects scrollto">Guide Laws for PL_DMD</a>
+        <a href="https://plug-storage.s3.eu-west-3.amazonaws.com/scanned_signed_quaterly_reports.pdf" target="_blank" class="btn-get-started scrollto">Quarterly Reports</a>
       </div>
     </div>
 
@@ -143,7 +144,7 @@
                         <td>{{ $data->file_reference }}</td>
                         <td>{{ $data->debtor }}</td>
                         <td>{{ $data->creditor }}</td>
-                        <td>{{ $data->arrears_owed }}</td>
+                        <td>{{ number_format($data->arrears_owed, 2) }}</td>
                         <td>{{ $data->billing_date }}</td>
                         
                         <!-- <td>{{ $data->arrears_state }}</td> -->
