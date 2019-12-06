@@ -132,10 +132,10 @@
                                                         <td></td>
                                                         <td></td>
                                                         <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
+                                                        <td>0.00</td>
+                                                        <td>0.00</td>
+                                                        <td>0.00</td>
+                                                        <td>0.00</td>
                                                         <td></td>
                                                     </tr>
                                                     <tr>
