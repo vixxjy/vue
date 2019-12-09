@@ -54,6 +54,8 @@ class ArrearController extends Controller
             $slug = preg_replace('/\s+/', '-', $str);
             $input = $request->all();
             $input['slug'] = $slug;
+            $year = substr($input['date_of_entry'],0, 4);
+            $input['year_of_entry'] = $year;
             // dd($input);
 
             $user = Arrear::create($input);

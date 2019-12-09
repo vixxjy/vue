@@ -21,6 +21,7 @@ class Arrear extends Model
         'arrears_state',
         'arrears_type',
         'date_of_entry',
+        'year_of_entry',
         'slug'
     ];
 

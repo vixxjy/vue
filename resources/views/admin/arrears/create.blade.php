@@ -139,7 +139,7 @@
                                                         <!-- <input type="text" name="nature_of_debt" class="form-control" placeholder="nature of debt"> -->
                                                         <select class="form-control custom-select" id="inputGroupSelect01" name="nature_of_debt" value="{{ old('nature_of_debt')}}">
                                                             <option value="{{ old('nature_of_debt')}}">{{ old('nature_of_debt')}}</option>
-                                                            <option value="">Select Nature of Debt</option>
+                                                            <!-- <option value="">Select Nature of Debt</option> -->
                                                             @foreach($debts as $new)
                                                             <option value="{{ $new['nature_of_debt'] }}">{{ $new['nature_of_debt'] }}</option>
                                                             @endforeach
@@ -181,7 +181,7 @@
                                                         <!-- <input type="text" name="economic_category" class="form-control" placeholder="News Title"> -->
                                                         <select class="form-control custom-select" id="inputGroupSelect01" name="economic_category" value="">
                                                             <option value="{{ old('economic_category')}}">{{ old('economic_category')}}</option>
-                                                            <option value="">Select Arrears Category</option>
+                                                            <!-- <option value="">Select Arrears Category</option> -->
                                                             @foreach($categories as $new)
                                                             <option value="{{ $new->name }}">{{ $new->name }}</option>
                                                             @endforeach
@@ -195,7 +195,7 @@
                                                         <!-- <input type="text" name="arrears_state" class="form-control" placeholder="News Title"> -->
                                                         <select class="form-control custom-select" id="inputGroupSelect01" name="arrears_state" value="">
                                                             <option value="{{ old('arrears_state')}}">{{ old('arrears_state')}}</option>
-                                                            <option value="">Select State of Arrears record</option>
+                                                            <!-- <option value="">Select State of Arrears record</option> -->
                                                             <option value="verified">Verified</option>
                                                             <option value="contested">Contested</option>
                                                             <option value="rejected">Rejected</option>

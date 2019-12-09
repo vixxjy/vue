@@ -93,8 +93,8 @@
         <a href="https://plug-storage.s3.eu-west-3.amazonaws.com/20190916_Domestic_Arrears_Guidelines_Version_1.0_sent.docx" class="btn-get-started scrollto">Domestic Arrears Guidelines</a>
         <a href="https://plug-storage.s3.eu-west-3.amazonaws.com/20191006_State_Domestic_Arrears_Oct_2019_Master_v3.pptx" class="btn-projects scrollto">State Domestic Arrears Oct 2019</a>
         <a href="https://plug-storage.s3.eu-west-3.amazonaws.com/bill_establishing_PL_DMD.pdf" target="_blank" class="btn-get-started scrollto">Bill Establishing PL_DMD</a>
-        <a href="https://plug-storage.s3.eu-west-3.amazonaws.com/debt_mngt_clean.pdf" target="_blank" class="btn-projects scrollto">Guide Laws for PL_DMD</a>
-        <a href="https://plug-storage.s3.eu-west-3.amazonaws.com/scanned_signed_quaterly_reports.pdf" target="_blank" class="btn-get-started scrollto">Quarterly Reports</a>
+        <!-- <a href="https://plug-storage.s3.eu-west-3.amazonaws.com/debt_mngt_clean.pdf" target="_blank" class="btn-projects scrollto">Guide Laws for PL_DMD</a> -->
+        <a href="https://plug-storage.s3.eu-west-3.amazonaws.com/scanned_signed_quaterly_reports.pdf" target="_blank" class="btn-projects scrollto">Quarterly Reports</a>
       </div>
     </div>
 
