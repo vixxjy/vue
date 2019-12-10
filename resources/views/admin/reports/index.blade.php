@@ -121,7 +121,7 @@
                                                         <td>{{ isset($incurred_amount2) ? number_format($incurred_amount2, 2) : "" }}</td>
                                                         <td>{{ isset($settled_amount2) ? number_format($settled_amount2, 2) : "" }}</td>
                                                         <td>{{ isset($outstanding_amount2) ? number_format($outstanding_amount2, 2) : "" }}</td>
-                                                        <td>{{ isset($total3_diff) ? number_format($total3_diff, 2) : "" }}</td>
+                                                        <td>{{ isset($total3_diff) ? number_format($total3_diff, 2) : "" }}</td>    
                                                         <td></td>
                                                     </tr>
                                                     <tr>
