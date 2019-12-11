@@ -153,7 +153,7 @@
                                                         <!-- <input type="text" name="nature_of_debt" class="form-control" placeholder="nature of debt"> -->
                                                         <select class="form-control custom-select" id="inputGroupSelect01" name="arrears_type" value="{{ old('arrears_type')}}">
                                                             <option value="{{ old('arrears_type')}}">{{ old('arrears_type')}}</option>
-                                                            <!-- <option value="outstanding">Outstanding</option> -->
+                                                            <option value="outstanding">Outstanding</option>
                                                             <option value="incurred">Incurred</option>
                                                             <option value="settled">Settled</option>
                                                         </select>
