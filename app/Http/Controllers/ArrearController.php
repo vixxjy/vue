@@ -132,6 +132,9 @@ class ArrearController extends Controller
             $str = strtolower($request->creditor);
             $slug = preg_replace('/\s+/', '-', $str);
             $mda->slug = $slug;
+
+            $year = substr($request->get('date_of_entry'),0, 4);
+            $mda->year_of_entry = $year;
           
             $mda->save();
 
