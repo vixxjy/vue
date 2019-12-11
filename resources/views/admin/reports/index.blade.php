@@ -88,7 +88,7 @@
                                                     <tr>
                                                         <td>1</td>
                                                         <td>Contractor's Arrears</td>
-                                                        <td></td>
+                                                        <td>{{ isset($outstanding_2017) ? number_format($outstanding_2017, 2) : "" }}</td>
                                                         <td>{{ isset($incurred_amount2018) ? number_format($incurred_amount2018, 2) : "" }}</td>
                                                         <td>{{ isset($settled_amount2018) ? number_format($settled_amount2018, 2) : "" }}</td>
                                                         <td>{{ isset($outstanding_amount2018) ? number_format($outstanding_amount2018, 2) : "" }}</td>
@@ -101,7 +101,7 @@
                                                     <tr>
                                                         <td>2</td>
                                                         <td>Pension And Gratuity <br> Arrears</td>
-                                                        <td></td>
+                                                        <td>{{ isset($outstanding_12017) ? number_format($outstanding_12017, 2) : "" }}</td>
                                                         <td>{{ isset($incurred_amount12018) ? number_format($incurred_amount12018, 2) : "" }}</td>
                                                         <td>{{ isset($settled_amount12018) ? number_format($settled_amount12018, 2) : "" }}</td>
                                                         <td>{{ isset($outstanding_amount12018) ? number_format($outstanding_amount12018, 2) : "" }}</td>
@@ -114,7 +114,7 @@
                                                     <tr>
                                                         <td>3</td>
                                                         <td>Salary Arrears And Other <br> Staff Claims Arrears</td>
-                                                        <td></td>
+                                                        <td>{{ isset($outstanding_22017) ? number_format($outstanding_22017, 2) : "" }}</td>
                                                         <td>{{ isset($incurred_amount22018) ? number_format($incurred_amount22018, 2) : "" }}</td>
                                                         <td>{{ isset($settled_amount22018) ? number_format($settled_amount22018, 2) : "" }}</td>
                                                         <td>{{ isset($outstanding_amount22018) ? number_format($outstanding_amount22018, 2) : "" }}</td>
@@ -128,7 +128,7 @@
                                                         <td>4</td>
                                                         <!-- <td>Other Arrears - Type X</td> -->
                                                         <td>Judgement Debt</td>
-                                                        <td></td>
+                                                        <td>{{ isset($outstanding_32017) ? number_format($outstanding_32017, 2) : "" }}</td>
                                                         <td>{{ isset($incurred_amount32018) ? number_format($incurred_amount32018, 2) : "" }}</td>
                                                         <td>{{ isset($settled_amount32018) ? number_format($settled_amount32018, 2) : "" }}</td>
                                                         <td>{{ isset($outstanding_amount32018) ? number_format($outstanding_amount32018, 2) : "" }}</td>
@@ -154,7 +154,7 @@
                                                     <tr style="color: blue;">
                                                         <td></td>
                                                         <td><b>Total of all <br> Arrears Type</b></td>
-                                                        <td></td>
+                                                        <td>{{ isset($outstanding_2017) + isset($outstanding_12017) + isset($outstanding_22017) + isset($outstanding_32017) ? number_format($outstanding_2017 + $outstanding_12017 + $outstanding_22017 + $outstanding_32017, 2) : "" }}</td>
                                                         <td>{{ isset($incurred_amount2018) + isset($incurred_amount12018) + isset($incurred_amount22018) + isset($incurred_amount32018) ? number_format($incurred_amount2018 + $incurred_amount12018 + $incurred_amount22018 + $incurred_amount32018, 2) : "" }}</td>
                                                         <td>{{ isset($settled_amount2018) + isset($settled_amount12018) + isset($settled_amount22018) + isset($settled_amount32018) ? number_format($settled_amount2018 + $settled_amount12018 + $settled_amount22018 + $settled_amount32018, 2) : ""}}</td>
                                                         <td>{{ isset($outstanding_amount2018) + isset($outstanding_amount12018) + isset($outstanding_amount2018) + isset($outstanding_amount32018) ? number_format($outstanding_amount2018 + $outstanding_amount12018 + $outstanding_amount22018 + $outstanding_amount32018, 2) : "" }}</td>
