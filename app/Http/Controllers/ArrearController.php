@@ -118,7 +118,9 @@ class ArrearController extends Controller
             $mda->debtor = $request->get('debtor');
             $mda->creditor = $request->get('creditor');
             $mda->contact = $request->get('contact');
+            $mda->date_of_entry = $request->get('date_of_entry');
             $mda->arrears_owed = $request->get('arrears_owed');
+            $mda->arrears_type = $request->get('arrears_type');
             $mda->billing_date = $request->get('billing_date');
             $mda->amount_settled = $request->get('amount_settled');
             $mda->nature_of_debt = $request->get('nature_of_debt');
