@@ -50,7 +50,7 @@ class ArrearController extends Controller
 
         try {
         
-            $str = strtolower($request->creditor);
+            $str = strtolower($request->creditor . $request->contract_terms);
             $slug = preg_replace('/\s+/', '-', $str);
             $input = $request->all();
             $input['slug'] = $slug;
