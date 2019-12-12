@@ -38,8 +38,8 @@ class ReportController extends Controller
 
                     $incurred_amount2018 = $outstanding_amount2018 + $settled_amount2018;
                     // outstanding 2017
-                    // $outstanding_2017 = $incurred_amount2018 - ($outstanding_amount2018 + $settled_amount2018) - $settled_amount2018;
-                    $outstanding_2017 = $incurred_amount2018;
+                    $outstanding_2017 = abs($incurred_amount2018 - ($outstanding_amount2018 + $settled_amount2018) - $settled_amount2018);
+                    // $outstanding_2017 = $incurred_amount2018;
                 
                 // year 2019
                 $arrears_by_incurred2019 = Arrear::where('economic_category', '=', 'Contractor\'s Arrears')
@@ -85,8 +85,8 @@ class ReportController extends Controller
              
                     $incurred_amount12018 = $outstanding_amount12018 + $settled_amount12018;
                     // outstanding 2017
-                    // $outstanding_12017 = $incurred_amount12018 - ($outstanding_amount12018 + $settled_amount12018) - $settled_amount12018;
-                    $outstanding_12017 = $incurred_amount12018;
+                    $outstanding_12017 = abs($incurred_amount12018 - ($outstanding_amount12018 + $settled_amount12018) - $settled_amount12018);
+                    // $outstanding_12017 = $incurred_amount12018;
 
                 $arrears_by_incurred2019 = Arrear::where('economic_category', '=', 'Pension And Gratuity Arrears')
                     ->where('year_of_entry', '=', $year)->get();
@@ -133,9 +133,9 @@ class ReportController extends Controller
              
                 $incurred_amount22018 = $outstanding_amount22018 + $settled_amount22018;
 
-                // $outstanding_22017 = $incurred_amount22018 - ($outstanding_amount22018 + $settled_amount22018) - $settled_amount22018;
+                $outstanding_22017 = abs($incurred_amount22018 - ($outstanding_amount22018 + $settled_amount22018) - $settled_amount22018);
 
-                $outstanding_22017 = $incurred_amount22018;
+                // $outstanding_22017 = $incurred_amount22018;
             //    2019
                 $arrears_by_incurred3 = Arrear::where('economic_category', '=', 'Salary Arrears And Other Staff Claims Arrears')
                     ->where('year_of_entry', '=', $year)->get();
@@ -180,8 +180,9 @@ class ReportController extends Controller
 
                 $incurred_amount32018 = $outstanding_amount32018 + $settled_amount32018;
 
-                // $outstanding_32017 = $incurred_amount32018 - ($outstanding_amount32018 + $settled_amount32018) - $settled_amount32018;
-                $outstanding_32017 = $incurred_amount32018;
+                $outstanding_32017 = abs($incurred_amount32018 - ($outstanding_amount32018 + $settled_amount32018) - $settled_amount32018);
+                // $outstanding_32017 = $incurred_amount32018;
+
                 $arrears_by_incurred4 = Arrear::where('economic_category', '=', 'Judgement Debt')
                     ->where('year_of_entry', '=', $year)->get();
                 $arrears_by_settled4 = Arrear::where('economic_category', '=', 'Judgement Debt')
