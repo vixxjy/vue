@@ -57,13 +57,13 @@
                         <!-- <span class="pcoded-badge label label-danger">sub-menus</span> -->
                     </a>
                 </li>
-                <li class="pcoded-hasmenu">
+                <!-- <li class="pcoded-hasmenu">
                     <a href="{{ route('arrears_category.index') }}" class="waves-effect waves-dark">
                         <span class="pcoded-micon"><i class="feather icon-sidebar"></i></span>
                         <span class="pcoded-mtext">Category of Arrears</span>
-                        <!-- <span class="pcoded-badge label label-primary">sub-menus</span> -->
+                        <span class="pcoded-badge label label-primary">sub-menus</span>
                     </a>
-                </li>
+                </li> -->
                 <li class="pcoded-hasmenu">
                     <a href="{{ route('arrears.index') }}" class="waves-effect waves-dark">
                         <span class="pcoded-micon"><i class="feather icon-sidebar"></i></span>
