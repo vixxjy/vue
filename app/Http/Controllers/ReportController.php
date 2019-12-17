@@ -60,10 +60,12 @@ class ReportController extends Controller
                     }
 
                     $incurred_amount = $outstanding_amount2018 + $amount_owed19 + $settled_amount;
-                    $outstanding_amount = $incurred_amount - ($amount_owed19 + $settled_amount) - $settled_amount;
+                    $outstanding_amount = $amount_owed19;
+
+                    // $outstanding_amount = $incurred_amount - ($amount_owed19 + $settled_amount) - $settled_amount;
 
                     $total1_diff = $outstanding_amount2018 - $outstanding_amount;
-                    $percentage1 = ($total1_diff/$outstanding_amount2018)  * 100;
+                    $percentage1 = $outstanding_amount2018 == 0 ? 0 : ($total1_diff/$outstanding_amount2018)  * 100;
                    
                     // pension gratuity 
                     $arrears_by_outstanding2018 = Arrear::where('economic_category', '=', 'Pension And Gratuity Arrears')
@@ -106,9 +108,9 @@ class ReportController extends Controller
                     }
 
                     $incurred_amount1 = $outstanding_amount12018 + $incurred_amount1x + $settled_amount1;
-                    // $outstanding_amount1 = $incurred_amount1 - $settled_amount1;
+                    $outstanding_amount1 = $incurred_amount1x;
 
-                    $outstanding_amount1 = $incurred_amount1 - ($incurred_amount1x + $settled_amount1) - $settled_amount1;
+                    // $outstanding_amount1 = $incurred_amount1 - ($incurred_amount1x + $settled_amount1) - $settled_amount1;
             
                     $total2_diff = $outstanding_amount12018 - $outstanding_amount1;
                     $percentage2 = $outstanding_amount12018 == 0 ? 0 : ( $total2_diff/$outstanding_amount12018 )  * 100;
@@ -154,8 +156,10 @@ class ReportController extends Controller
                     }
 
                     $incurred_amount2 = $outstanding_amount22018 + $incurred_amount2x + $settled_amount2;
+
+                    $outstanding_amount2 = $incurred_amount2x;
          
-                    $outstanding_amount2 = $incurred_amount2 - ($incurred_amount2x - $settled_amount2) - $settled_amount2;
+                    // $outstanding_amount2 = $incurred_amount2 - ($incurred_amount2x - $settled_amount2) - $settled_amount2;
 
                 $total3_diff = $outstanding_amount22018 - $outstanding_amount2;
                 $percentage3 = $outstanding_amount22018 == 0 ? 0 : ( $total3_diff/$outstanding_amount22018 )  * 100;
@@ -201,7 +205,8 @@ class ReportController extends Controller
                     }
 
                     $incurred_amount3 = $outstanding_amount32018 + $incurred_amount3x + $settled_amount3;
-                    $outstanding_amount3 = $incurred_amount3 - ($incurred_amount3x + $settled_amount3) - $settled_amount3;
+                    $outstanding_amount3 = $incurred_amount3x;
+                    // $outstanding_amount3 = $incurred_amount3 - ($incurred_amount3x + $settled_amount3) - $settled_amount3;
 
                 $total4_diff = $outstanding_amount32018 - $outstanding_amount3;
                 $percentage4 = $outstanding_amount32018 == 0 ? 0 : ( $total4_diff/$outstanding_amount32018 )  * 100;
@@ -247,7 +252,10 @@ class ReportController extends Controller
                     }
 
                     $incurred_amount4 = $outstanding_amount42018 + $incurred_amount4x + $settled_amount4;
-                    $outstanding_amount4 = $incurred_amount4 - ($incurred_amount4x + $settled_amount4) - $settled_amount4;
+
+                    $outstanding_amount4 = $incurred_amount4x;
+
+                    // $outstanding_amount4 = $incurred_amount4 - ($incurred_amount4x + $settled_amount4) - $settled_amount4;
 
                 $total5_diff = $outstanding_amount42018 - $outstanding_amount4;
                 $percentage5 = $outstanding_amount42018 == 0 ? 0 : ( $total5_diff/$outstanding_amount42018 )  * 100;
