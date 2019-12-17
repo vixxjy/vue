@@ -127,7 +127,7 @@
 
                                                     <div class="col-sm-4">
                                                     <div class="form-group">
-                                                        <label for="exampleInputEmail1">Amount Settled/Part Paid</label>
+                                                        <label for="exampleInputEmail1">(₦) Amount Settled/Part Paid</label>
                                                         <input type="text" name="amount_settled" class="form-control" placeholder="amount settled" value="{{ old('amount_settled')}}">
                                                     </div>
                                                     </div>
@@ -162,7 +162,7 @@
 
                                                     <div class="col-sm-4"> 
                                                     <div class="form-group">
-                                                        <label for="exampleInputPassword1">Arrears Owed</label>
+                                                        <label for="exampleInputPassword1">(₦) Arrears Owed</label>
                                                         <input type="text" name="arrears_owed" class="form-control" placeholder="arrears owed" value="{{ old('arrears_owed')}}">
                                                     </div>
                                                     </div>

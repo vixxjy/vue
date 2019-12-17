@@ -144,7 +144,7 @@
                         <td>{{ $data->file_reference }}</td>
                         <td>{{ $data->debtor }}</td>
                         <td>{{ $data->creditor }}</td>
-                        <td>{{ number_format($data->arrears_owed, 2) }}</td>
+                        <td>₦ {{ number_format($data->arrears_owed, 2) }}</td>
                         <td>{{ $data->billing_date }}</td>
                         
                         <!-- <td>{{ $data->arrears_state }}</td> -->

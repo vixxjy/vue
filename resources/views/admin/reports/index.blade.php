@@ -88,81 +88,81 @@
                                                     <tr>
                                                         <td>1</td>
                                                         <td>Contractor's Arrears</td>
-                                                        <td>{{ isset($outstanding_2017) ? number_format($outstanding_2017, 2) : "" }}</td>
-                                                        <td>{{ isset($incurred_amount2018) ? number_format($incurred_amount2018, 2) : "" }}</td>
-                                                        <td>{{ isset($settled_amount2018) ? number_format($settled_amount2018, 2) : "" }}</td>
-                                                        <td>{{ isset($outstanding_amount2018) ? number_format($outstanding_amount2018, 2) : "" }}</td>
-                                                        <td>{{ isset($incurred_amount) ? number_format($incurred_amount, 2) : "" }}</td>
-                                                        <td>{{ isset($settled_amount) ? number_format($settled_amount, 2) : "" }}</td>
-                                                        <td>{{ isset($outstanding_amount) ? number_format($outstanding_amount, 2) : "" }}</td>
-                                                        <td>{{ isset($total1_diff) ? number_format($total1_diff, 2) : "" }}</td>
-                                                        <td></td>
+                                                        <td>₦ {{ isset($outstanding_2017) ? number_format($outstanding_2017, 2) : "" }}</td>
+                                                        <td>₦ {{ isset($incurred_amount2018) ? number_format($incurred_amount2018, 2) : "" }}</td>
+                                                        <td>₦ {{ isset($settled_amount2018) ? number_format($settled_amount2018, 2) : "" }}</td>
+                                                        <td>₦ {{ isset($outstanding_amount2018) ? number_format($outstanding_amount2018, 2) : "" }}</td>
+                                                        <td>₦ {{ isset($incurred_amount) ? number_format($incurred_amount, 2) : "" }}</td>
+                                                        <td>₦ {{ isset($settled_amount) ? number_format($settled_amount, 2) : "" }}</td>
+                                                        <td>₦ {{ isset($outstanding_amount) ? number_format($outstanding_amount, 2) : "" }}</td>
+                                                        <td>₦ {{ isset($total1_diff) ? number_format($total1_diff, 2) : "" }}</td>
+                                                        <td>{{ isset($percentage1) ? round($percentage1, 2) : "" }}</td>
                                                     </tr>
                                                     <tr>
                                                         <td>2</td>
                                                         <td>Pension And Gratuity <br> Arrears</td>
-                                                        <td>{{ isset($outstanding_12017) ? number_format($outstanding_12017, 2) : "" }}</td>
-                                                        <td>{{ isset($incurred_amount12018) ? number_format($incurred_amount12018, 2) : "" }}</td>
-                                                        <td>{{ isset($settled_amount12018) ? number_format($settled_amount12018, 2) : "" }}</td>
-                                                        <td>{{ isset($outstanding_amount12018) ? number_format($outstanding_amount12018, 2) : "" }}</td>
-                                                        <td>{{ isset($incurred_amount1) ? number_format($incurred_amount1, 2) : "" }}</td>
-                                                        <td>{{ isset($settled_amount1) ? number_format($settled_amount1, 2) : "" }}</td>
-                                                        <td>{{ isset($outstanding_amount1) ? number_format($outstanding_amount1, 2) : "" }}</td>
-                                                        <td>{{ isset($total2_diff) ? number_format($total2_diff, 2) : ""}}</td>
-                                                        <td></td>
+                                                        <td>₦ {{ isset($outstanding_12017) ? number_format($outstanding_12017, 2) : "" }}</td>
+                                                        <td>₦ {{ isset($incurred_amount12018) ? number_format($incurred_amount12018, 2) : "" }}</td>
+                                                        <td>₦ {{ isset($settled_amount12018) ? number_format($settled_amount12018, 2) : "" }}</td>
+                                                        <td>₦ {{ isset($outstanding_amount12018) ? number_format($outstanding_amount12018, 2) : "" }}</td>
+                                                        <td>₦ {{ isset($incurred_amount1) ? number_format($incurred_amount1, 2) : "" }}</td>
+                                                        <td>₦ {{ isset($settled_amount1) ? number_format($settled_amount1, 2) : "" }}</td>
+                                                        <td>₦ {{ isset($outstanding_amount1) ? number_format($outstanding_amount1, 2) : "" }}</td>
+                                                        <td>₦ {{ isset($total2_diff) ? number_format($total2_diff, 2) : ""}}</td>
+                                                        <td>{{ isset($percentage2) ? round($percentage2, 2) : "" }}</td>
                                                     </tr>
                                                     <tr>
                                                         <td>3</td>
                                                         <td>Salary Arrears And Other <br> Staff Claims Arrears</td>
-                                                        <td>{{ isset($outstanding_22017) ? number_format($outstanding_22017, 2) : "" }}</td>
-                                                        <td>{{ isset($incurred_amount22018) ? number_format($incurred_amount22018, 2) : "" }}</td>
-                                                        <td>{{ isset($settled_amount22018) ? number_format($settled_amount22018, 2) : "" }}</td>
-                                                        <td>{{ isset($outstanding_amount22018) ? number_format($outstanding_amount22018, 2) : "" }}</td>
-                                                        <td>{{ isset($incurred_amount2) ? number_format($incurred_amount2, 2) : "" }}</td>
-                                                        <td>{{ isset($settled_amount2) ? number_format($settled_amount2, 2) : "" }}</td>
-                                                        <td>{{ isset($outstanding_amount2) ? number_format($outstanding_amount2, 2) : "" }}</td>
-                                                        <td>{{ isset($total3_diff) ? number_format($total3_diff, 2) : "" }}</td>    
-                                                        <td></td>
+                                                        <td>₦ {{ isset($outstanding_22017) ? number_format($outstanding_22017, 2) : "" }}</td>
+                                                        <td>₦ {{ isset($incurred_amount22018) ? number_format($incurred_amount22018, 2) : "" }}</td>
+                                                        <td>₦ {{ isset($settled_amount22018) ? number_format($settled_amount22018, 2) : "" }}</td>
+                                                        <td>₦ {{ isset($outstanding_amount22018) ? number_format($outstanding_amount22018, 2) : "" }}</td>
+                                                        <td>₦ {{ isset($incurred_amount2) ? number_format($incurred_amount2, 2) : "" }}</td>
+                                                        <td>₦ {{ isset($settled_amount2) ? number_format($settled_amount2, 2) : "" }}</td>
+                                                        <td>₦ {{ isset($outstanding_amount2) ? number_format($outstanding_amount2, 2) : "" }}</td>
+                                                        <td>₦ {{ isset($total3_diff) ? number_format($total3_diff, 2) : "" }}</td>    
+                                                        <td>{{ isset($percentage3) ? round($percentage3, 2) : "" }}</td>
                                                     </tr>
                                                     <tr>
                                                         <td>4</td>
                                                         <!-- <td>Other Arrears - Type X</td> -->
                                                         <td>Judgement Debt</td>
-                                                        <td>{{ isset($outstanding_32017) ? number_format($outstanding_32017, 2) : "" }}</td>
-                                                        <td>{{ isset($incurred_amount32018) ? number_format($incurred_amount32018, 2) : "" }}</td>
-                                                        <td>{{ isset($settled_amount32018) ? number_format($settled_amount32018, 2) : "" }}</td>
-                                                        <td>{{ isset($outstanding_amount32018) ? number_format($outstanding_amount32018, 2) : "" }}</td>
-                                                        <td>{{ isset($incurred_amount3) ? number_format($incurred_amount3, 2) : "" }}</td>
-                                                        <td>{{ isset($settled_amount3) ? number_format($settled_amount3, 2) : "" }}</td>
-                                                        <td>{{ isset($outstanding_amount3) ? number_format($outstanding_amount3, 2) : "" }}</td>
-                                                        <td>{{ isset($total4_diff) ? number_format($total4_diff, 2) : "" }}</td>
-                                                        <td></td>
+                                                        <td>₦ {{ isset($outstanding_32017) ? number_format($outstanding_32017, 2) : "" }}</td>
+                                                        <td>₦ {{ isset($incurred_amount32018) ? number_format($incurred_amount32018, 2) : "" }}</td>
+                                                        <td>₦ {{ isset($settled_amount32018) ? number_format($settled_amount32018, 2) : "" }}</td>
+                                                        <td>₦ {{ isset($outstanding_amount32018) ? number_format($outstanding_amount32018, 2) : "" }}</td>
+                                                        <td>₦ {{ isset($incurred_amount3) ? number_format($incurred_amount3, 2) : "" }}</td>
+                                                        <td>₦ {{ isset($settled_amount3) ? number_format($settled_amount3, 2) : "" }}</td>
+                                                        <td>₦ {{ isset($outstanding_amount3) ? number_format($outstanding_amount3, 2) : "" }}</td>
+                                                        <td>₦ {{ isset($total4_diff) ? number_format($total4_diff, 2) : "" }}</td>
+                                                        <td>{{ isset($percentage4) ? round($percentage4, 2) : "" }}</td>
                                                     </tr>
                                                     <tr>
                                                         <td>5</td>
                                                         <td>Other Arrears - Type Y</td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
+                                                        <td>₦ {{ isset($outstanding_42017) ? number_format($outstanding_42017, 2) : "" }}</td>
+                                                        <td>₦ {{ isset($incurred_amount42018) ? number_format($incurred_amount42018, 2) : "" }}</td>
+                                                        <td>₦ {{ isset($settled_amount42018) ? number_format($settled_amount42018, 2) : "" }}</td>
+                                                        <td>₦ {{ isset($outstanding_amount42018) ? number_format($outstanding_amount42018, 2) : "" }}</td>
+                                                        <td>₦ {{ isset($incurred_amount4) ? number_format($incurred_amount4, 2) : "" }}</td>
+                                                        <td>₦ {{ isset($settled_amount4) ? number_format($settled_amount4, 2) : "" }}</td>
+                                                        <td>₦ {{ isset($outstanding_amount4) ? number_format($outstanding_amount4, 2) : "" }}</td>
+                                                        <td>₦ {{ isset($total5_diff) ? number_format($total5_diff, 2) : "" }}</td>
+                                                        <td>{{ isset($percentage5) ? round($percentage5, 2) : "" }}</td>
                                                     </tr>
                                                     <tr style="color: blue;">
                                                         <td></td>
                                                         <td><b>Total of all <br> Arrears Type</b></td>
-                                                        <td>{{ isset($outstanding_2017) + isset($outstanding_12017) + isset($outstanding_22017) + isset($outstanding_32017) ? number_format($outstanding_2017 + $outstanding_12017 + $outstanding_22017 + $outstanding_32017, 2) : "" }}</td>
-                                                        <td>{{ isset($incurred_amount2018) + isset($incurred_amount12018) + isset($incurred_amount22018) + isset($incurred_amount32018) ? number_format($incurred_amount2018 + $incurred_amount12018 + $incurred_amount22018 + $incurred_amount32018, 2) : "" }}</td>
-                                                        <td>{{ isset($settled_amount2018) + isset($settled_amount12018) + isset($settled_amount22018) + isset($settled_amount32018) ? number_format($settled_amount2018 + $settled_amount12018 + $settled_amount22018 + $settled_amount32018, 2) : ""}}</td>
-                                                        <td>{{ isset($outstanding_amount2018) + isset($outstanding_amount12018) + isset($outstanding_amount2018) + isset($outstanding_amount32018) ? number_format($outstanding_amount2018 + $outstanding_amount12018 + $outstanding_amount22018 + $outstanding_amount32018, 2) : "" }}</td>
-                                                        <td>{{ isset($incurred_amount) + isset($incurred_amount1) + isset($incurred_amount2) + isset($incurred_amount3) ? number_format($incurred_amount + $incurred_amount1 + $incurred_amount2 + $incurred_amount3, 2) : "" }}</td>
-                                                        <td>{{ isset($settled_amount) + isset($settled_amount1) + isset($settled_amount2) + isset($settled_amount3) ? number_format($settled_amount + $settled_amount1 + $settled_amount2 + $settled_amount3, 2) : ""}}</td>
-                                                        <td>{{ isset($outstanding_amount) + isset($outstanding_amount1) + isset($outstanding_amount2) + isset($outstanding_amount3) ? number_format($outstanding_amount + $outstanding_amount1 + $outstanding_amount2 + $outstanding_amount3, 2) : "" }}</td>
-                                                        <td>{{ isset($total1_diff) + isset($total2_diff) + isset($total3_diff) + isset($total4_diff) ? number_format($total1_diff + $total2_diff + $total4_diff + $total4_diff, 2) : "" }}</td>
-                                                        <td></td>
+                                                        <td>₦ {{ isset($outstanding_2017) + isset($outstanding_12017) + isset($outstanding_22017) + isset($outstanding_32017) + isset($outstanding_42017) ? number_format($outstanding_2017 + $outstanding_12017 + $outstanding_22017 + $outstanding_32017 + $outstanding_42017, 2) : "" }}</td>
+                                                        <td>₦ {{ isset($incurred_amount2018) + isset($incurred_amount12018) + isset($incurred_amount22018) + isset($incurred_amount32018) + isset($incurred_amount42018) ? number_format($incurred_amount2018 + $incurred_amount12018 + $incurred_amount22018 + $incurred_amount32018 + $incurred_amount42018, 2) : "" }}</td>
+                                                        <td>₦ {{ isset($settled_amount2018) + isset($settled_amount12018) + isset($settled_amount22018) + isset($settled_amount32018) + isset($settled_amount42018) ? number_format($settled_amount2018 + $settled_amount12018 + $settled_amount22018 + $settled_amount32018 + $settled_amount42018, 2) : ""}}</td>
+                                                        <td>₦ {{ isset($outstanding_amount2018) + isset($outstanding_amount12018) + isset($outstanding_amount2018) + isset($outstanding_amount32018) + isset($outstanding_amount42018) ? number_format($outstanding_amount2018 + $outstanding_amount12018 + $outstanding_amount22018 + $outstanding_amount32018  + $outstanding_amount42018, 2) : "" }}</td>
+                                                        <td>₦ {{ isset($incurred_amount) + isset($incurred_amount1) + isset($incurred_amount2) + isset($incurred_amount3) + isset($incurred_amount4) ? number_format($incurred_amount + $incurred_amount1 + $incurred_amount2 + $incurred_amount3 + $incurred_amount4, 2) : "" }}</td>
+                                                        <td>₦ {{ isset($settled_amount) + isset($settled_amount1) + isset($settled_amount2) + isset($settled_amount3)  + isset($settled_amount4) ? number_format($settled_amount + $settled_amount1 + $settled_amount2 + $settled_amount3 + $settled_amount4, 2) : ""}}</td>
+                                                        <td>₦ {{ isset($outstanding_amount) + isset($outstanding_amount1) + isset($outstanding_amount2) + isset($outstanding_amount3) + isset($outstanding_amount4) ? number_format($outstanding_amount + $outstanding_amount1 + $outstanding_amount2 + $outstanding_amount3 + $outstanding_amount4, 2) : "" }}</td>
+                                                        <td>₦ {{ isset($total1_diff) + isset($total2_diff) + isset($total3_diff) + isset($total4_diff) + isset($total5_diff)? number_format($total1_diff + $total2_diff + $total3_diff + $total4_diff + $total5_diff , 2) : "" }}</td>
+                                                        <td>{{ isset($percentage1) + isset($percentage2) + isset($percentage3) + isset($percentage4) + isset($percentage5) ? round($percentage1 + $percentage2 + $percentage3 + $percentage4 + $percentage5 , 2) : "" }}</td>
                                                     </tr>
                                                 </tbody>
                                                 </table>
