@@ -59,7 +59,7 @@ class ReportController extends Controller
                         $settled_amount += $settled->amount_settled;
                     }
 
-                    $incurred_amount = abs($amount_owed19 + $settled_amount - $outstanding_amount2018);
+                    $incurred_amount = $amount_owed19 + $settled_amount - $outstanding_amount2018;
                     $outstanding_amount = $incurred_amount - ($amount_owed19 + $settled_amount) - $settled_amount;
 
                     $total1_diff = $outstanding_amount2018 - $outstanding_amount;
@@ -105,7 +105,7 @@ class ReportController extends Controller
                         $settled_amount1 += $settled->amount_settled;
                     }
 
-                    $incurred_amount1 =abs($incurred_amount1x + $settled_amount1 -  $outstanding_amount12018 );
+                    $incurred_amount1 = $incurred_amount1x + $settled_amount1 -  $outstanding_amount12018;
                     // $outstanding_amount1 = $incurred_amount1 - $settled_amount1;
 
                     $outstanding_amount1 = $incurred_amount1 - ($incurred_amount1x + $settled_amount1) - $settled_amount1;
@@ -153,7 +153,7 @@ class ReportController extends Controller
                         $settled_amount2 += $settled->amount_settled;
                     }
 
-                    $incurred_amount2 = abs($incurred_amount2x + $settled_amount2 - $outstanding_amount22018);
+                    $incurred_amount2 = $incurred_amount2x + $settled_amount2 - $outstanding_amount22018;
          
                     $outstanding_amount2 = $incurred_amount2 - ($incurred_amount2x - $settled_amount2) - $settled_amount2;
 
@@ -200,7 +200,7 @@ class ReportController extends Controller
                         $settled_amount3 += $settled->amount_settled;
                     }
 
-                    $incurred_amount3 = abs($incurred_amount3x + $settled_amount3 - $outstanding_amount32018);
+                    $incurred_amount3 = $incurred_amount3x + $settled_amount3 - $outstanding_amount32018;
                     $outstanding_amount3 = $incurred_amount3 - ($incurred_amount3x + $settled_amount3) - $settled_amount3;
 
                 $total4_diff = $outstanding_amount32018 - $outstanding_amount3;
@@ -246,7 +246,7 @@ class ReportController extends Controller
                         $settled_amount4 += $settled->amount_settled;
                     }
 
-                    $incurred_amount4 = abs($incurred_amount4x + $settled_amount4 - $outstanding_amount42018);
+                    $incurred_amount4 = $incurred_amount4x + $settled_amount4 - $outstanding_amount42018;
                     $outstanding_amount4 = $incurred_amount4 - ($incurred_amount4x + $settled_amount4) - $settled_amount4;
 
                 $total5_diff = $outstanding_amount42018 - $outstanding_amount4;
