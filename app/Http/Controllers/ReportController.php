@@ -193,7 +193,7 @@ class ReportController extends Controller
                     $settled_amount3 = 0;
                  
                     foreach($arrears_by_incurred4 as $incurred) {
-                        $incurred_amount3x += $incurred->amount_settled;
+                        $incurred_amount3x += $incurred->arrears_owed;
                     }
 
                     foreach($arrears_by_settled4 as $settled) {
@@ -239,7 +239,7 @@ class ReportController extends Controller
                     $settled_amount4 = 0;
                  
                     foreach($arrears_by_incurred5 as $incurred) {
-                        $incurred_amount4x += $incurred->amount_settled;
+                        $incurred_amount4x += $incurred->arrears_owed;
                     }
 
                     foreach($arrears_by_settled5 as $settled) {
