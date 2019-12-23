@@ -93,14 +93,14 @@
         <a href="https://plug-storage.s3.eu-west-3.amazonaws.com/20190916_Domestic_Arrears_Guidelines_Version_1.0_sent.docx" class="btn-get-started scrollto">Domestic Arrears Guidelines</a>
         <a href="https://plug-storage.s3.eu-west-3.amazonaws.com/20191006_State_Domestic_Arrears_Oct_2019_Master_v3.pptx" class="btn-projects scrollto">State Domestic Arrears Oct 2019</a>
         <a href="https://plug-storage.s3.eu-west-3.amazonaws.com/bill_establishing_PL_DMD.pdf" target="_blank" class="btn-get-started scrollto">Bill Establishing PL_DMD</a>
-        <!-- <a href="https://plug-storage.s3.eu-west-3.amazonaws.com/debt_mngt_clean.pdf" target="_blank" class="btn-projects scrollto">Guide Laws for PL_DMD</a> -->
+        <a href="https://drive.google.com/file/d/1UNnVAVRlPWD-TUVmfgfM2rJBx6pf1SWV/view?usp=sharing" target="_blank" class="btn-projects scrollto">DAC Pension Board</a>
         <a href="https://plug-storage.s3.eu-west-3.amazonaws.com/scanned_signed_quaterly_reports.pdf" target="_blank" class="btn-projects scrollto">Quarterly Reports</a>
       </div>
     </div>
 
     <div id="intro-carousel" class="owl-carousel" >
       <div class="item" style="background-image: url('https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.nasco.net%2Fmedia%2Fpage%2Fjos-1920x600.jpg&imgrefurl=https%3A%2F%2Fwww.nasco.net%2Fnews%2Fcity-state%2F&docid=60bpD2T8sWnW3M&tbnid=O9q3ZexqzR-syM%3A&vet=10ahUKEwjO9Mu_mLDlAhWktlkKHWzlBa4QMwheKBIwEg..i&w=1920&h=600&bih=678&biw=1301&q=images%20of%20jos&ved=0ahUKEwjO9Mu_mLDlAhWktlkKHWzlBa4QMwheKBIwEg&iact=mrc&uact=8');"></div>
-      <div class="item" style="background-image: url('frontend/img/intro-carousel/2.jpg');"></div>
+      <div class="item" style="background-image: url('https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.nasco.net%2Fmedia%2Fpage%2Fjos-1920x600.jpg&imgrefurl=https%3A%2F%2Fwww.nasco.net%2Fnews%2Fcity-state%2F&docid=60bpD2T8sWnW3M&tbnid=O9q3ZexqzR-syM%3A&vet=10ahUKEwjO9Mu_mLDlAhWktlkKHWzlBa4QMwheKBIwEg..i&w=1920&h=600&bih=678&biw=1301&q=images%20of%20jos&ved=0ahUKEwjO9Mu_mLDlAhWktlkKHWzlBa4QMwheKBIwEg&iact=mrc&uact=8');"></div>
       <div class="item" style="background-image: url('frontend/img/intro-carousel/3.jpg');"></div>
       <div class="item" style="background-image: url('frontend/img/intro-carousel/4.jpg');"></div>
       <div class="item" style="background-image: url('frontend/img/intro-carousel/5.jpg');"></div>

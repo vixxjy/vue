@@ -27,8 +27,19 @@ class DashbaordController extends Controller
         $mdas = MDA::orderBy('id','DESC')->get();
         $economy = EconomicCategory::orderBy('id','DESC')->get();
         $datas = Arrear::orderBy('id','DESC')->get();
-        // dd($comments);
+        
         return view('admin.dashboard', compact('comments', 'mdas', 'economy', 'datas'))
         ->with('i', ($request->input('page', 1) - 1) * 5);
+    }
+
+    public function destroy($id)
+    {
+        try {
+        $mda = Comment::find($id)->delete();
+        return redirect()->route('dashboard')
+                        ->with('success','Arrears Complains deleted successfully');
+        }catch (Exception $e) {
+            echo 'Error: ' . $e->getMessage();
+        }
     }
 }

@@ -30,6 +30,7 @@ Route::group( ['middleware' => ['auth']], function() {
   
   // dashboard
   Route::get('/dashboard',['uses' => 'DashbaordController@index', 'as' => 'dashboard']);
+  Route::get('/comments/delete/{id}',['uses' => 'DashbaordController@destroy', 'as' => 'comments.delete']);
   Route::get('/logout', ['uses' => 'AuthController@logout','as' => 'logout']);
   Route::get('/users',['uses' => 'UserController@index', 'as' => 'users.index']);
   Route::post('/user/store',['uses' => 'UserController@store', 'as' => 'users.store']);
