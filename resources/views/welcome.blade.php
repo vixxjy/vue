@@ -73,7 +73,7 @@
         <ul class="nav-menu">
           <li class="menu-active"><a href="/">Home</a></li>
           <li><a href="#services">Arrears</a></li>
-          <li><a href="https://forms.gle/ZNMrKUeESk8y8h5H6">If you have any complaint or query kindly click on this link to contact us</a></li>
+          <li><a href="https://forms.gle/ZNMrKUeESk8y8h5H6" target="_blank">If you have any complaint or query kindly click on this link to contact us</a></li>
           <!-- <li><a href="#contact">Contact</a></li> -->
           <li><a href="{{ route('login') }}">Login</a></li>
         </ul>
