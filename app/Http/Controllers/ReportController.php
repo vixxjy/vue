@@ -15,9 +15,11 @@ class ReportController extends Controller
     public function index(Request $request)
     {
         try {
-            $year = date("Y");
+            // $year = date("Y");
+            $year = 2019;
+         
             $a_year_back = $year - 1;
-                
+            // dd($a_year_back); 
                 // year 2018
                 $arrears_by_outstanding2018 = Arrear::where('economic_category', '=', 'Contractor\'s Arrears')
                     ->where('year_of_entry', '=', $a_year_back)->get();
