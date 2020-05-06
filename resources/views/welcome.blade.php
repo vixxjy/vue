@@ -74,7 +74,7 @@
           <li class="menu-active"><a href="/">Home</a></li>
           <li><a href="#services">Arrears</a></li>
           <li><a href="https://forms.gle/ZNMrKUeESk8y8h5H6" target="_blank">Complaints</a></li>
-          <!-- <li><a href="#contact">Contact</a></li> -->
+          <li><a href="https://debtmanagement.plateaustate.gov.ng/">Debt Management Office</a></li>
           <li><a href="{{ route('login') }}">Login</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
