@@ -164,11 +164,6 @@ return [
         Intervention\Image\ImageServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
         
-        // providers
-        App\Providers\NewsCategoryServiceProvider::class,
-        App\Providers\NewsServiceProvider::class,
-        App\Providers\SlidersServiceProvider::class,
-        App\Providers\PostServiceProvider::class,
 
         /*
          * Package Service Providers...
@@ -182,8 +177,6 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
- 		App\Providers\BlogServiceProvider::class,
- 		App\Providers\DocumentServiceProvider::class,
         App\Providers\DashboardServiceProvider::class,
  		App\Providers\LoginServiceProvider::class,
         Davmixcool\MetaManager\MetaServiceProvider::class,
